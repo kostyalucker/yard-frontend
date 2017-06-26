@@ -38,3 +38,33 @@ body {
   width:418.9px;
   height: 131px;
 }
+/*====================compass contact=================*/
+.compass-contact-wrap {
+  padding: 4rem 0rem;
+  text-align: center;
+}
+.compass-contact-title {
+  text-transform: capitalize;
+  font-family: "Helvetica";
+  font-size: 24px;
+  font-weight: bolder;
+  text-align: center;
+  color: #3e4247;
+}
+.compass-contact-wrap p {
+  font-family: FiraSans;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #3e4247;
+}
+.compass-contact-button {
+  padding: 1rem 1.5rem;
+  text-transform: capitalize;
+  border-radius: 2px;
+  background-color: #000000;
+  font-family: "Helvetica";
+  font-size: 16px;
+  line-height: 1;
+  text-align: center;
+  color: #ffffff;
+}
