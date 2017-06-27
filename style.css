@@ -4,7 +4,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url("img/background (1).png");
+  background-image: url("img/background.png");
   background-repeat: repeat;
   background-color: #f2f2f2;
 }
@@ -21,7 +21,7 @@ body {
 }
 .header-nav-link {
   text-decoration: none;
-  font-family: Fira Sans;
+  font-family: "Fira Sans";
   margin-left: 32px;
   font-size: 16px;
   line-height: 1;
@@ -43,7 +43,7 @@ body {
 }
 /*====================compass contact=================*/
 .compass-contact-wrap {
-  padding: 2rem 0rem;
+  padding: 2.5rem 0rem;
   text-align: center;
 }
 .compass-contact-title {
@@ -66,8 +66,8 @@ body {
   text-transform: capitalize;
   border-radius: 2px;
   background-color: #000000;
-  font-family: Fira Sans;
-  font-size: 16px;
+  font-family: "Fira Sans";
+  font-size: 1rem;
   line-height: 1;
   text-align: center;
   color: #ffffff;
@@ -89,35 +89,92 @@ body {
 .compass-card-img {
   object-fit: cover;
   flex-shrink: 0;
-  width: 31.125rem;
+  width: 31rem;
 }
 .compass-card-info {
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
 }
 .compass-cards {
   margin-bottom: 6rem;
 }
 .compass-card-location {
- margin: 0;
  margin-bottom: 1.5rem;
 
  font-family: Monaco, Menlo, Consolas, monospace;
- font-size: 1rem;
+ font-size: 1.1rem;
  text-transform: uppercase;
  color: #646971;
 }
 .compass-card-title {
+  text-transform: capitalize;
   font-family: "Fira Sans";
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: bold;
   text-align: left;
   color: #000000;
   margin: 0;
 }
 .compass-card-description {
-  font-family: Fira Sans;
+  font-family: "Fira Sans";
   font-size: 1rem;
   line-height: 1.5;
   text-align: left;
   color: #3e4247;
+}
+/*================FOOTER===============*/
+.footer {
+  background-color: #111111;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.footer-line {
+  border: solid 1px #3e4247;
+}
+.footer-contacts-text {
+  line-height: 1;
+  font-family: "Fira Sans";
+  font-size: .9rem;
+  font-weight: 300;
+  text-align: left;
+  color: #a9afb6;
+  opacity: .7;
+}
+.footer-contacts-number {
+  font-family: "Fira Sans";
+  font-size: .9rem;
+  font-weight: 300;
+  text-align: left;
+  color: #a9afb6;
+  margin-top: 1rem;
+  opacity: .7;
+}
+.footer-link {
+  display: block;
+  margin-bottom: 0;
+  margin-top: .5rem;
+  font-family: "Fira Sans";
+  font-size: .9rem;
+  line-height: 1.3rem;
+  font-weight: 300;
+  color: #f3f3f3;
+  opacity: .7;
+}
+.footer-contacts-title {
+  color: #646971;
+  font-family: "Fira Sans";
+  font-size: .9rem;
+  font-weight: bold;
+  text-align: left;
+}
+.footer-link-arrow {
+  margin-left: .5rem;
+}
+.footer-text-copyright {
+  margin-top: 6.5rem;
+  line-height: 1.5;
+  font-family: "Fira Sans";
+  font-size: 11px;
+  font-weight: 300;
+  text-align: left;
+  color: #a9afb6;
 }
