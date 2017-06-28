@@ -17,15 +17,98 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.header-logo {
+  margin-right: 2rem;
+}
 .header-nav-link {
   text-decoration: none;
   font-family: "Fira Sans";
-  margin-left: 32px;
+  margin-left: 1.8rem;
   font-size: 16px;
   line-height: 1;
   text-align: left;
   color: #3e4247;
 }
+/*================HEADLINE=================*/
+.complexes-headline {
+  padding: 1.25rem 0;
+}
+.complexes-headline-title {
+  margin: 0;
+  font-family: Philosopher;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.13;
+  text-align: left;
+  color: #3e4247;
+}
+.complexes-headline-text {
+  font-family: Fira Sans;
+  font-size: .9rem;
+  font-weight: 300;
+  line-height: 1.57;
+  text-align: left;
+  color: #a9afb6;
+}
+/*===============HERO SECTION=================*/
+.complexes-hero-wrap {
+  display: flex;
+  flex-direction: row;
+}
+.hero-image {
+  height: 25rem;
+  width: auto;
+}
+.hero-image:nth-child(1) {
+  width: 296.2px;
+  height: 400px;
+}
+.hero-image:nth-child(2) {
+  width: 280.5px;
+  height: 400px;
+}
+.hero-image:nth-child(3) {
+  width: 164.8px;
+  height: 400px;
+}
+.hero-image:nth-child(4) {
+  width: 626.2px;
+  height: 400px;
+}
+.hero-image:nth-child(5) {
+  width: 72px;
+  height: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*=======================FOOTER================*/
 .footer {
   background-color: #111111;
@@ -44,6 +127,10 @@ body {
   color: #a9afb6;
   opacity: .7;
 }
+
+
+
+
 .footer-contacts-number {
   font-family: "Fira Sans";
   font-size: .9rem;
