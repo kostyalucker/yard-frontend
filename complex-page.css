@@ -62,8 +62,8 @@ body {
 }
 .headline-button {
   position: absolute;
-  right: 1rem;
-  bottom: 3.5rem;
+  right: .8rem;
+  bottom: 3.3rem;
 
   border-radius: 2px;
   border: solid 1px #e0e0e1;
@@ -84,8 +84,7 @@ body {
   flex-direction: row;
 }
 .hero-image {
-  height: 25rem;
-  width: auto;
+
 }
 .hero-button-wrap {
   position: relative;
@@ -109,7 +108,10 @@ body {
 }
 /*===================COMPLEXES-Info===============*/
 .complexes-info {
-  padding: 1rem 0;
+  padding: .3rem 3rem;
+}
+.complexes-info {
+  margin-left: 2.3rem;
 }
 .complexes-info-wrap {
   display: flex;
@@ -146,6 +148,8 @@ body {
 
   margin-top: 0;
   padding: 0;
+  margin-right: 1rem;
+  margin-bottom: .4rem;
 }
 .complexes-description-title {
    font-family: Philosopher;
@@ -155,21 +159,25 @@ body {
    text-align: left;
    color: #3e4247;
 
-   margin-bottom: 1rem;
+   margin-left: 1rem;
+   margin-top: 1.9rem;
 }
 .description-table-label {
   width: 50%;
-
+  margin-left: 1rem;
+  margin-top: 0rem;
+  margin-bottom: -1rem;
 
   font-family: Fira Sans;
   font-size: 1rem;
   line-height: 1.38;
   text-align: left;
   color: #a9afb6;
+
+
 }
 .description-table-defin {
-  margin-left: 0rem;
-  margin-right: 1rem;
+  margin-left: -.3rem;
   font-family: Fira Sans;
   font-size: 1rem;
   font-weight: 600;
@@ -188,19 +196,21 @@ body {
  line-height: 1.13;
  text-align: left;
  color: #3e4247;
+
+ margin-left: 1rem;
+ margin-top: 2.5rem;
 }
 .extra-desc-text {
  font-family: "Fira Sans";
  font-size: 1rem;
- line-height: 1.56;
+ line-height: 1.6;
  text-align: left;
  color: #3e4247;
+
+ margin-top: 2.6rem;
+ margin-left: .7rem;
 }
 /*=======================infrastructure=============*/
-.complexes-infra {
-  margin: 0;
-  padding: 0;
-}
 .complexes-infra-title {
   font-family: Philosopher;
   font-size: 1.5rem;
@@ -209,8 +219,8 @@ body {
   text-align: left;
   color: #3e4247;
 
-  margin-bottom: 0;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
 }
 .complexes-infra-text {
   font-family: Fira Sans;
@@ -218,6 +228,9 @@ body {
   line-height: 1.38;
   text-align: left;
   color: #3e4247;
+
+  margin-left: 1rem;
+  margin-top: -.4rem;
 }
 /*============OFFERS==============*/
 .complexes-offers {
@@ -225,10 +238,12 @@ body {
 
   padding-top: 4rem;
   padding-bottom: 4rem;
+  margin-bottom: .5rem;
+  margin-top: 3.2rem;
 }
 .complexes-offers-item {
   background: #fff;
-  padding: 1rem 2rem;
+  padding: .3rem 2rem;
 }
 .complexes-offers-title {
   font-family: Philosopher;
@@ -238,7 +253,8 @@ body {
   text-align: center;
   color: #3e4247;
 
-  margin-bottom: 1.5rem;
+  margin-top: 0rem;
+  margin-bottom: 1.2rem;
 }
 .offers-item-title {
   font-family: Philosopher;
@@ -247,27 +263,29 @@ body {
   line-height: 1.1;
   text-align: left;
   color: #3e4247;
+
+  margin-left: 1rem;
 }
 .offers-item-label {
-  margin-top: 2rem;
   font-family: Fira Sans;
   font-size: 1rem;
   line-height: 1.38;
   text-align: left;
   color: #a9afb6;
+
+  margin-left: 1rem;
 }
 .offers-item-value {
+  margin-left: 1rem;
+
   font-family: Fira Sans;
   font-size: 1rem;
   line-height: 1.38;
   text-align: left;
   color: #3e4247;
-
-  margin-bottom: 2rem;
 }
 .offers-item-button {
   display: block;
-  margin: 0 auto;
   outline: none;
   border: none;
   border-radius: 5px;
@@ -279,17 +297,20 @@ body {
   color: #ffffff;
 
   padding: .8rem 2rem;
+  margin-left: 2.9rem;
+  margin-top: 2.2rem;
 }
 /*==============complexes-guide=============*/
 .complexes-guide {
-  padding: 4rem 0;
+  padding: 4.8rem 0rem;
   padding-bottom: 10rem;
+
 
   background-color: #3e4247;
 }
 .complexes-guide-title {
-  margin-top: 6rem;
-
+  margin-top: 7.2rem;
+  margin-left: 1rem;
   font-family: Philosopher;
   font-size: 1.5rem;
   font-weight: bold;
@@ -297,6 +318,7 @@ body {
   color: #a9afb6;
 }
 .complexes-guide-subheading {
+  margin-left: 1rem;
   font-family: Philosopher;
   font-size: 3rem;
   font-weight: bold;
@@ -304,7 +326,6 @@ body {
   text-align: left;
   color: #ffffff;
 
-  padding-right: 1rem;
 }
 .complexes-guide-link {
   text-decoration: none;
@@ -312,6 +333,8 @@ body {
   font-size: 1rem;
   text-align: left;
   color: #00779a;
+
+  margin-left: 1rem;
 }
 .complexes-guide-img {
   width: 583px;
@@ -319,19 +342,19 @@ body {
 }
 /*=============COMPLEXES-ADDReSS===============*/
 .complexes-address-row {
-  margin-left: -2.4rem;
+  margin-left: .6rem;
   margin-right: .4em;
 }
 .complexes-address-map {
   position: relative;
-  margin-top: -7.7rem;
+  margin-top: -6.4rem;
   margin-bottom: 4rem;
   width: 583px;
   height: 306px;
 }
 .complexes-address-points {
   position: relative;
-  margin-top: -7.7rem;
+  margin-top: -6.4rem;
   margin-bottom: 4rem;
 
   background: #ffffff;
@@ -340,7 +363,7 @@ body {
   box-shadow: 0 0 20px rgba(0,0,0,.5);
 }
 .complexes-address-point {
-  padding: 0rem 1.5rem .2rem;
+  padding: 0 1.5rem .2rem;
   box-sizing: border-box;
   border-bottom: solid 2px #e0e0e1;
 
@@ -366,33 +389,11 @@ body {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*=======================FOOTER================*/
 .footer {
   background-color: #111111;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem 0rem;
+  padding-left: .5rem;
 }
 .footer-line {
   border: solid 1px #3e4247;
@@ -405,43 +406,45 @@ body {
   text-align: left;
   color: #a9afb6;
   opacity: .7;
+
 }
-
-
-
-
 .footer-contacts-number {
   font-family: "Fira Sans";
   font-size: .9rem;
   font-weight: 300;
   text-align: left;
   color: #a9afb6;
-  margin-top: 1rem;
   opacity: .7;
 }
 .footer-link {
   display: block;
-  margin-bottom: 0;
-  margin-top: .5rem;
   font-family: "Fira Sans";
   font-size: .9rem;
-  line-height: 1.3rem;
+  line-height: 1.5rem;
   font-weight: 300;
   color: #f3f3f3;
   opacity: .7;
+
+  margin-top: .5rem;
 }
 .footer-contacts-title {
+  margin-bottom: .5rem;
+
+  padding-top: 0rem;
   color: #646971;
   font-family: "Fira Sans";
   font-size: .9rem;
   font-weight: bold;
   text-align: left;
 }
+.footer-contacts-title:nth-child(1) {
+  margin-top: 0rem;
+}
 .footer-link-arrow {
-  margin-left: .5rem;
+  margin-left: .2rem;
 }
 .footer-text-copyright {
-  margin-top: 6.5rem;
+  margin-top: 6rem;
   line-height: 1.5;
   font-family: "Fira Sans";
   font-size: 11px;
