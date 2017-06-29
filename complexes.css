@@ -174,7 +174,69 @@ body {
   text-align: left;
   color: #3e4247;
 }
+/*============OFFERS==============*/
+.complexes-offers {
+  background-color: #f4f5f9;
 
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.complexes-offers-item {
+  width: 25rem;
+  background: #fff;
+  padding: 1rem 2rem;
+  margin-left: .8rem;
+}
+.complexes-offers-title {
+  font-family: Philosopher;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.13;
+  text-align: center;
+  color: #3e4247;
+  
+  margin-bottom: 1.5rem;
+}
+.offers-item-title {
+  font-family: Philosopher;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.1;
+  text-align: left;
+  color: #3e4247;
+}
+.offers-item-label {
+  margin-top: 2rem;
+  font-family: Fira Sans;
+  font-size: 1rem;
+  line-height: 1.38;
+  text-align: left;
+  color: #a9afb6;
+}
+.offers-item-value {
+  font-family: Fira Sans;
+  font-size: 1rem;
+  line-height: 1.38;
+  text-align: left;
+  color: #3e4247;
+
+  margin-bottom: 2rem;
+}
+.offers-item-button {
+  display: block;
+  margin: 0 auto;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #000000;
+  font-family: Fira Sans;
+  font-size: 1rem;
+  line-height: 1;
+  text-align: center;
+  color: #ffffff;
+
+  padding: .8rem 2rem;
+}
 
 
 
