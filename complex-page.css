@@ -1,0 +1,446 @@
+* {
+  text-decoration: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+/*==============HEADER=================*/
+.header {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid #ccc;
+  background-color: #ffffff;
+}
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-logo {
+  margin-right: 2rem;
+}
+.header-nav-link {
+  text-decoration: none;
+  font-family: "Fira Sans";
+  margin-left: 1.8rem;
+  font-size: 16px;
+  line-height: 1;
+  text-align: left;
+  color: #3e4247;
+}
+/*================HEADLINE=================*/
+.complexes-headline {
+  padding: 1.25rem 0;
+}
+.complexes-headline-title {
+  margin: 0;
+  font-family: Philosopher;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.13;
+  text-align: left;
+  color: #3e4247;
+}
+.complexes-headline-text {
+  font-family: Fira Sans;
+  font-size: .9rem;
+  font-weight: 300;
+  line-height: 1.57;
+  text-align: left;
+  color: #a9afb6;
+}
+.headline-button-wrap {
+  position: relative;
+}
+.headline-button {
+  position: absolute;
+  right: .5rem;
+  bottom: 4rem;
+
+  border-radius: 2px;
+  border: solid 1px #e0e0e1;
+  outline: none;
+  font-family: Fira Sans;
+  font-size: .7rem;
+  font-weight: 300;
+  line-height: 1;
+  text-align: left;
+  color: #00779a;
+  background: #f2f2f2;
+
+  padding: .3rem .5rem;
+}
+/*===============HERO SECTION=================*/
+.complexes-hero-wrap {
+  display: flex;
+  flex-direction: row;
+}
+.hero-image {
+  height: 25rem;
+  width: auto;
+}
+.hero-button-wrap {
+  position: relative;
+}
+.hero-button {
+  position: absolute;
+  bottom: 1rem;
+  left: 8rem;
+  border-radius: 2px;
+  background-color: #00779a;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-family: Fira Sans;
+  font-size: .7rem;
+  font-weight: 300;
+  line-height: 1;
+  text-align: left;
+
+  padding: .3rem .5rem;
+}
+/*===================COMPLEXES-Info===============*/
+.complexes-info {
+  padding: 1rem 0;
+}
+.complexes-info-wrap {
+  display: flex;
+  justify-content: flex-start;
+
+  border-bottom: solid 2px #e0e0e1;
+}
+.complexes-info-title {
+  font-family: Philosopher;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.4;
+  text-align: left;
+  color: #3e4247;
+}
+.complexes-info-title:nth-child(2) {
+  margin-left: 2.5rem;
+}
+.complexes-info-title:nth-child(3) {
+  margin-left: 4.7rem;
+}
+.complexes-info-small {
+  font-family: Fira Sans;
+  font-size: .9rem;
+  font-weight: 300;
+  line-height: 1.57;
+  text-align: left;
+  color: #a9afb6;
+}
+/*==============complexes-DESCRIPTION=============*/
+.complexes-description-table {
+  display: flex;
+  justify-content: row;
+
+  margin-top: 0;
+  padding: 0;
+}
+.complexes-description-title {
+   font-family: Philosopher;
+   font-size: 1.5rem;
+   font-weight: bold;
+   line-height: 1.13;
+   text-align: left;
+   color: #3e4247;
+
+   margin-bottom: 1rem;
+}
+.description-table-label {
+  width: 50%;
+
+
+  font-family: Fira Sans;
+  font-size: 1rem;
+  line-height: 1.38;
+  text-align: left;
+  color: #a9afb6;
+}
+.description-table-defin {
+  margin-left: 0rem;
+  margin-right: 1rem;
+  font-family: Fira Sans;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.56;
+  text-align: left;
+  color: #3e4247;
+}
+/*=================Extra-DESCRIPTION===========*/
+.complexes-extra-desc {
+
+}
+.complexes-extra-desc-row {
+  border-bottom: solid 2px #e0e0e1 ;
+}
+.extra-desc-title {
+ font-family: Philosopher;
+ font-size: 1.5rem;
+ font-weight: bold;
+ line-height: 1.13;
+ text-align: left;
+ color: #3e4247;
+}
+.extra-desc-text {
+ font-family: "Fira Sans";
+ font-size: 1rem;
+ line-height: 1.56;
+ text-align: left;
+ color: #3e4247;
+}
+/*=======================infrastructure=============*/
+.complexes-infra {
+  margin: 0;
+  padding: 0;
+}
+.complexes-infra-title {
+  font-family: Philosopher;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.13;
+  text-align: left;
+  color: #3e4247;
+
+  margin-bottom: 0;
+  margin-top: 2rem;
+}
+.complexes-infra-text {
+  font-family: Fira Sans;
+  font-size: 1rem;
+  line-height: 1.38;
+  text-align: left;
+  color: #3e4247;
+}
+/*============OFFERS==============*/
+.complexes-offers {
+  background-color: #f4f5f9;
+
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.complexes-offers-item {
+  background: #fff;
+  padding: 1rem 2rem;
+}
+.complexes-offers-title {
+  font-family: Philosopher;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.13;
+  text-align: center;
+  color: #3e4247;
+
+  margin-bottom: 1.5rem;
+}
+.offers-item-title {
+  font-family: Philosopher;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.1;
+  text-align: left;
+  color: #3e4247;
+}
+.offers-item-label {
+  margin-top: 2rem;
+  font-family: Fira Sans;
+  font-size: 1rem;
+  line-height: 1.38;
+  text-align: left;
+  color: #a9afb6;
+}
+.offers-item-value {
+  font-family: Fira Sans;
+  font-size: 1rem;
+  line-height: 1.38;
+  text-align: left;
+  color: #3e4247;
+
+  margin-bottom: 2rem;
+}
+.offers-item-button {
+  display: block;
+  margin: 0 auto;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #000000;
+  font-family: Fira Sans;
+  font-size: 1rem;
+  line-height: 1;
+  text-align: center;
+  color: #ffffff;
+
+  padding: .8rem 2rem;
+}
+/*==============complexes-guide=============*/
+.complexes-guide {
+  padding: 4rem 0;
+  padding-bottom: 10rem;
+
+  background-color: #3e4247;
+}
+.complexes-guide-title {
+  margin-top: 6rem;
+
+  font-family: Philosopher;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: left;
+  color: #a9afb6;
+}
+.complexes-guide-subheading {
+  font-family: Philosopher;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.25;
+  text-align: left;
+  color: #ffffff;
+
+  padding-right: 1rem;
+}
+.complexes-guide-link {
+  text-decoration: none;
+  font-family: Fira Sans;
+  font-size: 1rem;
+  text-align: left;
+  color: #00779a;
+}
+.complexes-guide-img {
+  width: 583px;
+  height: 560px;
+}
+/*=============COMPLEXES-ADDReSS===============*/
+.complexes-address-row {
+  margin-left: -2.4rem;
+  margin-right: .4em;
+}
+.complexes-address {
+
+}
+.complexes-address-map {
+  position: relative;
+  margin-top: -9.6rem;
+  margin-bottom: 4rem;
+}
+.complexes-address-points {
+  position: relative;
+  margin-top: -7.7rem;
+  margin-bottom: 4rem;
+
+  box-shadow: 0 0 20px rgba(0,0,0,.5);
+  background: #ffffff;
+}
+.complexes-address-point {
+  padding: 0rem 1.5rem .2rem;
+  box-sizing: border-box;
+  border-bottom: solid 2px #e0e0e1;
+
+  display: flex;
+  flex-flow: column wrap;
+}
+.address-point-title {
+  margin-top: 1.3rem;
+  margin-bottom: 0rem;
+  font-family: Fira Sans;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.38;
+  text-align: left;
+  color: #3e4247;
+}
+.address-point-text {
+  font-family: Fira Sans;
+  font-size: 1rem;
+  line-height: 1.38;
+  text-align: left;
+  color: #a9afb6;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=======================FOOTER================*/
+.footer {
+  background-color: #111111;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.footer-line {
+  border: solid 1px #3e4247;
+}
+.footer-contacts-text {
+  line-height: 1;
+  font-family: "Fira Sans";
+  font-size: .9rem;
+  font-weight: 300;
+  text-align: left;
+  color: #a9afb6;
+  opacity: .7;
+}
+
+
+
+
+.footer-contacts-number {
+  font-family: "Fira Sans";
+  font-size: .9rem;
+  font-weight: 300;
+  text-align: left;
+  color: #a9afb6;
+  margin-top: 1rem;
+  opacity: .7;
+}
+.footer-link {
+  display: block;
+  margin-bottom: 0;
+  margin-top: .5rem;
+  font-family: "Fira Sans";
+  font-size: .9rem;
+  line-height: 1.3rem;
+  font-weight: 300;
+  color: #f3f3f3;
+  opacity: .7;
+}
+.footer-contacts-title {
+  color: #646971;
+  font-family: "Fira Sans";
+  font-size: .9rem;
+  font-weight: bold;
+  text-align: left;
+}
+.footer-link-arrow {
+  margin-left: .5rem;
+}
+.footer-text-copyright {
+  margin-top: 6.5rem;
+  line-height: 1.5;
+  font-family: "Fira Sans";
+  font-size: 11px;
+  font-weight: 300;
+  text-align: left;
+  color: #a9afb6;
+}
