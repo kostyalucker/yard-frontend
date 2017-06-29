@@ -50,6 +50,27 @@ body {
   text-align: left;
   color: #a9afb6;
 }
+.headline-button-wrap {
+  position: relative;
+}
+.headline-button {
+  position: absolute;
+  right: .5rem;
+  bottom: 4rem;
+
+  border-radius: 2px;
+  border: solid 1px #e0e0e1;
+  outline: none;
+  font-family: Fira Sans;
+  font-size: .7rem;
+  font-weight: 300;
+  line-height: 1;
+  text-align: left;
+  color: #00779a;
+  background: #f2f2f2;
+
+  padding: .3rem .5rem;
+}
 /*===============HERO SECTION=================*/
 .complexes-hero-wrap {
   display: flex;
@@ -58,6 +79,26 @@ body {
 .hero-image {
   height: 25rem;
   width: auto;
+}
+.hero-button-wrap {
+  position: relative;
+}
+.hero-button {
+  position: absolute;
+  bottom: 1rem;
+  left: 8rem;
+  border-radius: 2px;
+  background-color: #00779a;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-family: Fira Sans;
+  font-size: .7rem;
+  font-weight: 300;
+  line-height: 1;
+  text-align: left;
+
+  padding: .3rem .5rem;
 }
 /*===================COMPLEXES-Info===============*/
 .complexes-info {
@@ -194,7 +235,7 @@ body {
   line-height: 1.13;
   text-align: center;
   color: #3e4247;
-  
+
   margin-bottom: 1.5rem;
 }
 .offers-item-title {
@@ -237,8 +278,86 @@ body {
 
   padding: .8rem 2rem;
 }
+/*==============complexes-guide=============*/
+.complexes-guide {
+  padding: 4rem 0;
+  padding-bottom: 10rem;
 
+  background-color: #3e4247;
+}
+.complexes-guide-title {
+  margin-top: 6rem;
 
+  font-family: Philosopher;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: left;
+  color: #a9afb6;
+}
+.complexes-guide-subheading {
+  font-family: Philosopher;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.25;
+  text-align: left;
+  color: #ffffff;
+
+  padding-right: 1rem;
+}
+.complexes-guide-link {
+  text-decoration: none;
+  font-family: Fira Sans;
+  font-size: 1rem;
+  text-align: left;
+  color: #00779a;
+}
+.complexes-guide-img {
+  width: 583px;
+  height: 560px;
+}
+/*=============COMPLEXES-ADDReSS===============*/
+.complexes-address {
+
+}
+.complexes-address-map {
+  position: relative;
+  margin-top: -9.6rem;
+  margin-bottom: 4rem;
+}
+.complexes-address-points {
+  position: relative;
+  margin-top: -7.7rem;
+  margin-bottom: 4rem;
+
+  box-shadow: 0 0 20px rgba(0,0,0,.5);
+  background: #ffffff;
+}
+.complexes-address-point {
+  padding: 0rem 1.5rem .2rem;
+  box-sizing: border-box;
+  border-bottom: solid 2px #e0e0e1;
+
+  display: flex;
+  flex-flow: column wrap;
+}
+.address-point-title {
+  margin-top: 1.3rem;
+  margin-bottom: 0rem;
+  font-family: Fira Sans;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.38;
+  text-align: left;
+  color: #3e4247;
+}
+.address-point-text {
+  font-family: Fira Sans;
+  font-size: 1rem;
+  line-height: 1.38;
+  text-align: left;
+  color: #a9afb6;
+
+}
 
 
 
