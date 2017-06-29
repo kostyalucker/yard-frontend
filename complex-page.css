@@ -19,28 +19,32 @@ body {
 }
 .header-logo {
   margin-right: 2rem;
+  margin-left: .5rem;
 }
 .header-nav-link {
   text-decoration: none;
   font-family: "Fira Sans";
-  margin-left: 1.8rem;
-  font-size: 16px;
+  margin-left: 1.3rem;
+  margin-right: .5rem;
+  font-size: 1rem;
   line-height: 1;
   text-align: left;
   color: #3e4247;
 }
+
 /*================HEADLINE=================*/
 .complexes-headline {
-  padding: 1.25rem 0;
+  padding: 0;
 }
 .complexes-headline-title {
-  margin: 0;
   font-family: Philosopher;
   font-size: 2rem;
   font-weight: bold;
   line-height: 1.13;
   text-align: left;
   color: #3e4247;
+
+  margin-left: 1rem;
 }
 .complexes-headline-text {
   font-family: Fira Sans;
@@ -49,14 +53,17 @@ body {
   line-height: 1.57;
   text-align: left;
   color: #a9afb6;
+
+  margin-top: -1.3rem;
+  margin-left: 1rem;
 }
 .headline-button-wrap {
   position: relative;
 }
 .headline-button {
   position: absolute;
-  right: .5rem;
-  bottom: 4rem;
+  right: 1rem;
+  bottom: 3.5rem;
 
   border-radius: 2px;
   border: solid 1px #e0e0e1;
@@ -65,11 +72,11 @@ body {
   font-size: .7rem;
   font-weight: 300;
   line-height: 1;
-  text-align: left;
+  text-align: center;
   color: #00779a;
   background: #f2f2f2;
 
-  padding: .3rem .5rem;
+  padding: .4rem .6rem;
 }
 /*===============HERO SECTION=================*/
 .complexes-hero-wrap {
@@ -171,9 +178,6 @@ body {
   color: #3e4247;
 }
 /*=================Extra-DESCRIPTION===========*/
-.complexes-extra-desc {
-
-}
 .complexes-extra-desc-row {
   border-bottom: solid 2px #e0e0e1 ;
 }
@@ -318,21 +322,22 @@ body {
   margin-left: -2.4rem;
   margin-right: .4em;
 }
-.complexes-address {
-
-}
 .complexes-address-map {
   position: relative;
-  margin-top: -9.6rem;
+  margin-top: -7.7rem;
   margin-bottom: 4rem;
+  width: 583px;
+  height: 306px;
 }
 .complexes-address-points {
   position: relative;
   margin-top: -7.7rem;
   margin-bottom: 4rem;
 
-  box-shadow: 0 0 20px rgba(0,0,0,.5);
   background: #ffffff;
+}
+.complexes-address-points, .complexes-address-map {
+  box-shadow: 0 0 20px rgba(0,0,0,.5);
 }
 .complexes-address-point {
   padding: 0rem 1.5rem .2rem;

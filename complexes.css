@@ -19,16 +19,19 @@ body {
 }
 .header-logo {
   margin-right: 2rem;
+  margin-left: .5rem;
 }
 .header-nav-link {
   text-decoration: none;
   font-family: "Fira Sans";
-  margin-left: 1.8rem;
-  font-size: 16px;
+  margin-left: 1rem;
+  margin-right: .5rem;
+  font-size: 1rem;
   line-height: 1;
   text-align: left;
   color: #3e4247;
 }
+
 /*================HEADLINE=================*/
 .complexes-headline {
   padding: 1.25rem 0;
@@ -384,8 +387,8 @@ body {
 /*=======================FOOTER================*/
 .footer {
   background-color: #111111;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem 0rem;
+  padding-left: .5rem;
 }
 .footer-line {
   border: solid 1px #3e4247;
@@ -398,43 +401,45 @@ body {
   text-align: left;
   color: #a9afb6;
   opacity: .7;
+
 }
-
-
-
-
 .footer-contacts-number {
   font-family: "Fira Sans";
   font-size: .9rem;
   font-weight: 300;
   text-align: left;
   color: #a9afb6;
-  margin-top: 1rem;
   opacity: .7;
 }
 .footer-link {
   display: block;
-  margin-bottom: 0;
-  margin-top: .5rem;
   font-family: "Fira Sans";
   font-size: .9rem;
-  line-height: 1.3rem;
+  line-height: 1.5rem;
   font-weight: 300;
   color: #f3f3f3;
   opacity: .7;
+
+  margin-top: .5rem;
 }
 .footer-contacts-title {
+  margin-bottom: .5rem;
+
+  padding-top: 0rem;
   color: #646971;
   font-family: "Fira Sans";
   font-size: .9rem;
   font-weight: bold;
   text-align: left;
 }
+.footer-contacts-title:nth-child(1) {
+  margin-top: 0rem;
+}
 .footer-link-arrow {
-  margin-left: .5rem;
+  margin-left: .2rem;
 }
 .footer-text-copyright {
-  margin-top: 6.5rem;
+  margin-top: 6rem;
   line-height: 1.5;
   font-family: "Fira Sans";
   font-size: 11px;
