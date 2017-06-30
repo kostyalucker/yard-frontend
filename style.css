@@ -5,6 +5,7 @@ body {
   background-image: url("img/background.png");
   background-repeat: repeat;
   background-color: #eaebf0;
+  background-size: 1.5%;
 }
 .header {
   padding-top: 1.25rem;
