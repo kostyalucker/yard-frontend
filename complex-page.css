@@ -245,7 +245,7 @@ body {
 .complexes-offers-item {
   background: #fff;
 
-  padding: 1rem 2.9rem;
+  padding: 0rem 2.9rem;
 }
 .complexes-offers-title {
   font-family: Philosopher;
@@ -263,6 +263,8 @@ body {
   text-align: left;
   color: #3e4247;
   word-spacing: .2rem;
+
+  margin-top: 1.8rem;
 }
 .offers-item-label {
   font-family: Fira Sans;
@@ -289,11 +291,15 @@ body {
   line-height: 1;
   text-align: center;
   color: #ffffff;
+
+  margin-left: 1.9rem;
+  margin-top: 2.1rem;
+  padding: .8rem 1.5rem;
 }
 /*==============complexes-guide=============*/
 .complexes-guide {
-  padding: 4.8rem 0rem;
-  padding-bottom: 10rem;
+  padding: 3.8rem 0rem;
+  padding-bottom: 13rem;
 
 
   background-color: #3e4247;
@@ -331,21 +337,24 @@ body {
   height: 560px;
 }
 /*=============COMPLEXES-ADDReSS===============*/
+.complexes-address {
+  padding: 1rem 0;
+}
 .complexes-address-row {
   margin-left: .6rem;
   margin-right: .4em;
 }
 .complexes-address-map {
   position: relative;
-  margin-top: -6.4rem;
+  margin-top: -10.2rem;
   margin-bottom: 4rem;
   width: 583px;
   height: 306px;
 }
 .complexes-address-points {
   position: relative;
-  margin-top: -6.4rem;
-  margin-bottom: 4rem;
+  margin-top: -10.1rem;
+  margin-bottom: 2rem;
 
   background: #ffffff;
 }
@@ -376,13 +385,13 @@ body {
   line-height: 1.38;
   text-align: left;
   color: #a9afb6;
-
+  padding-top: 0rem;
 }
 
 /*=======================FOOTER================*/
 .footer {
   background-color: #111111;
-  padding: 1.8rem 0rem ;
+  padding: 1.2rem 0rem ;
   padding-left: .4rem;
 }
 .footer-line {
@@ -393,13 +402,11 @@ body {
   line-height: 1;
   font-family: "Fira Sans";
   font-size: .9rem;
-  font-weight: 300;
+  font-weight: 200;
   text-align: left;
   color: #a9afb6;
-  opacity: .7;
 
   margin-left: 0rem;
-
 }
 .footer-contacts-number {
   font-family: "Fira Sans";
@@ -407,7 +414,6 @@ body {
   font-weight: 300;
   text-align: left;
   color: #a9afb6;
-  opacity: .7;
 
   margin-top: 1.5rem;
   margin-left: .5rem;
@@ -419,24 +425,25 @@ body {
   line-height: 1.5rem;
   font-weight: 300;
   color: #f3f3f3;
-  opacity: .7;
 
   margin-top: .5rem;
   margin-left: rem;
 }
 .footer-contacts-title {
-  margin-bottom: .5rem;
-  margin-left: 0rem;
-
-  padding-top: 0rem;
+  padding-top: .1rem;
   color: #646971;
   font-family: "Fira Sans";
   font-size: .9rem;
   font-weight: bold;
   text-align: left;
 }
-.footer-contacts-title:nth-child(1) {
+.footer-contacts-title:nth-child(2) {
   margin-top: 0rem;
+  border-top: 2px solid #3e4247;
+  padding-top: .8rem;
+}
+.footer-contacts-title:nth-child(1) {
+  margin-top: 1rem;
 }
 .footer-link-arrow {
   margin-left: .4rem;
