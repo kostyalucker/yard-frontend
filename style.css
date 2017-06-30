@@ -87,7 +87,7 @@ body {
 
   margin-left: .5rem;
   margin-top: 1rem;
-  margin-bottom: 2.7rem;
+  margin-bottom: 2.8rem;
 
   background-color: #ffffff;
   border-bottom: 3px solid #ccc;
@@ -111,7 +111,8 @@ body {
  color: #646971;
 }
 .compass-card-title {
-  margin-top: 1.8rem;
+  margin-top: 1.9rem;
+  margin-bottom: 2rem;
 
   text-transform: capitalize;
   font-family: "Fira Sans";
@@ -124,15 +125,15 @@ body {
   margin-top: -1.5rem;
   font-family: "Fira Sans";
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.6;
   text-align: left;
   color: #3e4247;
 }
 /*================FOOTER===============*/
 .footer {
   background-color: #111111;
-  padding: 2rem 0rem;
-  padding-left: .5rem;
+  padding: 1.8rem 0rem;
+  padding-left: .4rem;
 }
 .footer-line {
   border: solid 1px #3e4247;
@@ -146,6 +147,8 @@ body {
   color: #a9afb6;
   opacity: .7;
 
+  margin-left: 0rem;
+
 }
 .footer-contacts-number {
   font-family: "Fira Sans";
@@ -154,6 +157,9 @@ body {
   text-align: left;
   color: #a9afb6;
   opacity: .7;
+
+  margin-top: 1.5rem;
+  margin-left: 0rem;
 }
 .footer-link {
   display: block;
@@ -165,9 +171,11 @@ body {
   opacity: .7;
 
   margin-top: .5rem;
+  margin-left: rem;
 }
 .footer-contacts-title {
   margin-bottom: .5rem;
+  margin-left: 0rem;
 
   padding-top: 0rem;
   color: #646971;
