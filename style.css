@@ -104,7 +104,7 @@ body {
   padding: 0rem 2rem;
 }
 .compass-cards {
-  margin-bottom: 6rem;
+  margin-bottom: 5.6rem;
 }
 .compass-card-location {
  font-family: Monaco, Menlo, Consolas, monospace;
@@ -134,12 +134,8 @@ body {
 /*================FOOTER===============*/
 .footer {
   background-color: #111111;
-  padding: 1.8rem 0rem ;
-  padding-left: .4rem;
-}
-.footer-line {
-  margin-top: 0rem;
-  margin-left: -.7rem;
+  padding: 1rem 0rem ;
+  padding-bottom: 2.5rem;
 }
 .footer-contacts-text {
   line-height: 1;
@@ -148,10 +144,6 @@ body {
   font-weight: 300;
   text-align: left;
   color: #a9afb6;
-  opacity: .7;
-
-  margin-left: 0rem;
-
 }
 .footer-contacts-number {
   font-family: "Fira Sans";
@@ -164,23 +156,22 @@ body {
   margin-top: 1.5rem;
   margin-left: .5rem;
 }
+.footer .col-xs-2:nth-child(2),.footer .col-xs-2:nth-child(3) {
+  padding-top: 1.2rem;
+}
 .footer-link {
   display: block;
   font-family: "Fira Sans";
   font-size: .9rem;
   line-height: 1.5rem;
   font-weight: 300;
-  color: #f3f3f3;
-  opacity: .7;
+  color: #ffffff;
 
   margin-top: .5rem;
-  margin-left: rem;
 }
 .footer-contacts-title {
-  margin-bottom: .5rem;
-  margin-left: 0rem;
+  margin-bottom: 0rem;
 
-  padding-top: 0rem;
   color: #646971;
   font-family: "Fira Sans";
   font-size: .9rem;
@@ -190,14 +181,14 @@ body {
 .footer-contacts-title:nth-child(2) {
   padding-top: 1rem;
   border-top: 2px solid #3e4247;
-  margin-top: 0rem;
+  margin-top: 0rem
 }
 .footer-link-arrow {
-  margin-left: .4rem;
+  margin-left: .3rem;
 }
 .footer-text-copyright {
   margin-top: 6.0rem;
-  margin-left: -.1rem;
+
   line-height: 1.7;
   font-family: "Fira Sans";
   font-size: 11px;
