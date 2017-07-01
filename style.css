@@ -104,7 +104,7 @@ body {
   padding: 0rem 2rem;
 }
 .compass-cards {
-  margin-bottom: 6rem;
+  margin-bottom: 5.5rem;
 }
 .compass-card-location {
  font-family: Monaco, Menlo, Consolas, monospace;
@@ -134,7 +134,7 @@ body {
 /*================FOOTER===============*/
 .footer {
   background-color: #111111;
-  padding: .5rem 0rem ;
+  padding: 1rem 0rem ;
   padding-bottom: 2.5rem;
 }
 .footer-contacts-text {
