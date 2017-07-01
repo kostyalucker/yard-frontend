@@ -181,7 +181,7 @@ body {
 .footer-contacts-title:nth-child(2) {
   padding-top: 1rem;
   border-top: 2px solid #3e4247;
-  margin-top: 0rem
+  margin-top: 0rem;
 }
 .footer-link-arrow {
   margin-left: .3rem;
@@ -191,7 +191,7 @@ body {
 
   line-height: 1.7;
   font-family: "Fira Sans";
-  font-size: 11px;
+  font-size: .669rem;
   font-weight: 300;
   text-align: left;
   color: #a9afb6;
