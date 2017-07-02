@@ -1,18 +1,7 @@
-* {
-  text-decoration: none;
-}
-body {
-  margin: 0;
-  padding: 0;
-
-  /*===============Появился горизонтальный скролл, поставил костыль========*/
-  overflow-x:hidden;
-}
 /*==============HEADER=================*/
 .header {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-  border-bottom: 1px solid #ccc;
   background-color: #ffffff;
 }
 .header-wrap {
@@ -37,7 +26,10 @@ body {
 
 /*================HEADLINE=================*/
 .complexes-headline {
-  padding: 0;
+  padding-top: 1.5rem;
+  padding-left: 1.8rem;
+
+  border-top: solid 1px #eaebf0;
 }
 .complexes-headline-title {
   font-family: Philosopher;
@@ -47,8 +39,8 @@ body {
   text-align: left;
   color: #3e4247;
 
-  margin-left: .9rem;
-  margin-top: 1.5rem;
+  letter-spacing: .7px;
+  margin: 0;
 }
 .complexes-headline-text {
   font-family: Fira Sans;
@@ -57,38 +49,33 @@ body {
   line-height: 1.57;
   text-align: left;
   color: #a9afb6;
-
-  margin-top: -.8rem;
-  margin-left: 1rem;
 }
 .headline-button-wrap {
   position: relative;
 }
 .headline-button {
   position: absolute;
-  right: 1.15rem;
-  bottom: 3.5rem;
+  right: 1.8rem;
+  bottom: 3.8rem;
 
-  border-radius: 2px;
-  border: solid 1px #e0e0e1;
-  outline: none;
-  font-family: Fira Sans;
-  font-size: .6rem;
+  padding: 0.5rem .9rem;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 10px;
   font-weight: 300;
-  line-height: 1;
-  text-align: center;
+  line-height: 1.0;
   color: #00779a;
-  background: #f2f2f2;
-
-  padding: .4rem .8rem;
+  text-align: center;
+  background-color: #ffffff;
+  border: solid 1px #e0e0e1;
+  border-radius: 2px;
+  cursor: pointer;
 }
 /*===============HERO SECTION=================*/
 .complexes-hero-wrap {
   display: flex;
   flex-direction: row;
-}
-.hero-image {
 
+  overflow-x: hidden;
 }
 .hero-button-wrap {
   position: relative;
@@ -112,16 +99,12 @@ body {
 }
 /*===================COMPLEXES-Info===============*/
 .complexes-info {
-  padding: .4rem 3rem;
-}
-.complexes-info {
-  margin-left: 2.2rem;
+  padding: 0rem 3rem;
 }
 .complexes-info-wrap {
-  display: flex;
-  justify-content: flex-start;
+  display: flex; 
 
-  border-bottom: solid 2px #e0e0e1;
+  border-bottom: solid 1px #e0e0e1;
 }
 .complexes-info-title {
   font-family: Philosopher;
@@ -130,12 +113,8 @@ body {
   line-height: 1.3;
   text-align: left;
   color: #3e4247;
-}
-.complexes-info-title:nth-child(2) {
-  margin-left: 2.6rem;
-}
-.complexes-info-title:nth-child(3) {
-  margin-left: 4.7rem;
+
+  padding-right: 3rem;
 }
 .complexes-info-small {
   font-family: Fira Sans;
@@ -147,9 +126,7 @@ body {
 }
 /*==============complexes-DESCRIPTION=============*/
 .complex-specific {
-  padding-top: 1.8rem;
-  padding-bottom: 2.3rem;
-  padding-left: 12.5rem;
+  padding-top: 2rem;
 }
 
 .complex-specific-title {
@@ -180,13 +157,17 @@ body {
   margin: 0;
   font-family: Fira Sans;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.56;
   text-align: left;
   color: #3e4247;
+  padding-left: 1.5rem;
 }
 
 /*=================Extra-DESCRIPTION===========*/
+.complexes-extra-desc {
+  padding-top: 2.3rem;
+}
 .extra-desc-title {
  font-family: Philosopher;
  font-size: 1.5rem;
@@ -195,8 +176,7 @@ body {
  text-align: left;
  color: #3e4247;
 
- margin-left: 1rem;
- margin-top: 0rem;
+ margin: 0;
 }
 .extra-desc-text {
  font-family: "Fira Sans";
@@ -205,23 +185,21 @@ body {
  text-align: left;
  color: #3e4247;
 
- margin-top: 0rem;
- margin-left: .7rem;
- padding-bottom: 0rem;
+ margin: 0;
 }
 /*=======================infrastructure=============*/
+.complexes-infra {
+  padding-bottom: 3rem;
+}
 .complexes-infra-title {
-  border-top: solid 2px #e0e0e1 ;
-
   font-family: Philosopher;
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.13;
   text-align: left;
   color: #3e4247;
-  padding-top: 2.1rem;
-  margin-top: -1.1rem;
-  margin-left: 1.1rem;
+  margin: 0;
+  padding-top: 1.5rem;
 }
 .complexes-infra-text {
   font-family: Fira Sans;
@@ -229,243 +207,184 @@ body {
   line-height: 1.38;
   text-align: left;
   color: #3e4247;
-
-  margin-left: 1rem;
-  margin-top: -.4rem;
 }
-.infra-row {
-  padding-right: 2rem;
-  padding-bottom: 2.8rem;
+.container-border {
+  padding-top: 1rem;
+  border-top: solid 1px #e0e0e1;
 }
 /*============OFFERS==============*/
 .complexes-offers {
   background-color: #f4f5f9;
 
-  padding: 1.1rem 0 4.2rem;
+  padding: 2.6rem 0;
+  text-align: center;
 }
 .complexes-offers-item {
   background: #fff;
 
-  padding: .5rem 1.5rem 1.2rem;
+  padding: 1.5rem 2rem;
 }
 .complexes-offers-title {
-  padding-top: 2rem;
-
   font-family: Philosopher;
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.13;
   text-align: center;
   color: #3e4247;
-}
-.offers-item-title {
-  font-family: Philosopher;
-  font-size: 1.2rem;
-  font-weight: bold;
-  line-height: 1.1;
-  text-align: left;
-  color: #3e4247;
-  word-spacing: .2rem;
-  margin-left: 1rem;
-  margin-top: 1.8rem;
-}
-.offers-item-label {
-  font-family: Fira Sans;
-  font-size: 1rem;
-  line-height: 1.38;
-  text-align: left;
-  color: #a9afb6;
 
-  margin-left: 1rem;
+  padding-bottom: 0rem;
 }
-.offers-item-value {
+.complexes-offers-item {
+  background: #fff;
+
+  padding: 1.5rem 2rem;
+}
+.complex-card-title {
+  font-family: 'Philosopher';
+  font-size: 1.25rem;
+  margin: 0;
+  padding-bottom: 1.5rem;
+  text-align: left;
+}
+.complex-card-info {
+  margin: 0;
+  padding-bottom: 1.8rem;
+
   font-family: Fira Sans;
   font-size: 1rem;
   line-height: 1.38;
   text-align: left;
   color: #3e4247;
-
-  margin-left: 1rem;
 }
-.offers-item-button {
+.complex-card-name {
   display: block;
-  outline: none;
-  border: none;
-  border-radius: 5px;
-  background-color: #000000;
-  font-family: Fira Sans;
-  font-size: 1rem;
-  line-height: 1;
-  text-align: center;
-  color: #ffffff;
-
-  margin-left: 3rem;
-  margin-top: 2.1rem;
-  padding: .8rem 1.5rem;
+  padding-bottom: .9rem;
+  color: #a9afb6;
 }
+.complex-card-btn {
+  text-align: center;
+
+  font-family: Fira Sans;
+  font-weight: 300;
+  display: inline-block;
+  padding: .75rem 2rem;
+  text-decoration: none;
+  color: white;
+  border-radius: 2px;
+  background-color: #000;
+
+  padding-top: .7rem;
+  text-align: center;
+}
+
+
 /*==============complexes-guide=============*/
 .complexes-guide {
-  padding: 3.8rem 0rem;
-  padding-bottom: 13rem;
-
-
+  padding: 4.5rem 0 15rem;
   background-color: #3e4247;
 }
 .complexes-guide-title {
-  margin-top: 7.2rem;
-  margin-left: 1rem;
-  font-family: Philosopher;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: left;
+  font-family: 'Philosopher';
+  font-size: 1.55rem;
+  margin: 0;
+  padding-top: 7.4rem;
+  padding-bottom: 3rem;
   color: #a9afb6;
 }
 .complexes-guide-subheading {
-  margin-left: 1rem;
-  font-family: Philosopher;
+  font-family: 'Philosopher';
   font-size: 3rem;
-  font-weight: bold;
   line-height: 1.25;
-  text-align: left;
-  color: #ffffff;
+  margin: 0;
+  padding-bottom: 3rem;
+  color: #fff;
 
 }
 .complexes-guide-link {
   text-decoration: none;
-  font-family: Fira Sans;
-  font-size: 1rem;
-  text-align: left;
   color: #00779a;
-
-  margin-left: 1rem;
+  font-family: Fira Sans;
 }
 .complexes-guide-img {
   width: 583px;
   height: 560px;
 }
 /*=============COMPLEXES-ADDReSS===============*/
-.complexes-address {
-  padding: 0rem 0;
+.complex-map {
+  margin-top: -10.3rem;
+  padding-bottom: 3.5rem;
 }
-.complexes-address-row {
-  margin-left: .6rem;
-  margin-right: .4em;
-}
-.complexes-address-map {
-  position: relative;
-  margin-top: -9.4rem;
-  margin-bottom: 4rem;
-  width: 583px;
+.address-map-img {
   height: 306px;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, .5);
 }
-.complexes-address-points {
-  position: relative;
-  margin-top: -9.35rem;
-  margin-bottom: 2rem;
 
-  background: #ffffff;
-}
-.complexes-address-points, .complexes-address-map {
-  box-shadow: 0 0 20px rgba(0,0,0,.5);
+.complexes-address-points {
+  background: #fff;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, .5);
 }
 .complexes-address-point {
-  padding: 0 1.5rem .3rem;
-  box-sizing: border-box;
-  border-bottom: solid 2px #e0e0e1;
-
-  display: flex;
-  flex-flow: column wrap;
+  padding: 1.6rem 1.5rem;
+  border-bottom: solid 1px #e0e0e1;
 }
 .address-point-title {
-  margin-top: 1.2rem;
-  margin-bottom: 0rem;
   font-family: Fira Sans;
   font-size: 1rem;
   font-weight: 500;
-  line-height: 1.38;
-  text-align: left;
-  color: #3e4247;
+  margin: 0;
+  padding-bottom: .85rem;
 }
 .address-point-text {
-  font-family: Fira Sans;
-  font-size: 1rem;
-  line-height: 1.38;
-  text-align: left;
+  margin: 0;
   color: #a9afb6;
-  padding-top: 0rem;
-  margin-top: 1rem;
 }
 
 /*=======================FOOTER================*/
 .footer {
+  padding-top: 1.7rem;
+  padding-bottom: 2rem;
   background-color: #111111;
-  padding: 1.2rem 0rem ;
-  padding-left: .5rem;
+  color: #a9afb6;
+  font-family: "Fira Sans";
+}
+
+.footer-contacts-title {
+  margin: 0;
+  margin-bottom: 0.9rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #646971;
 }
 .footer-contacts-text {
-  line-height: 1;
-  font-family: "Fira Sans";
-  font-size: .9rem;
-  font-weight: 200;
-  text-align: left;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  font-weight: 300;
   color: #a9afb6;
-
-  margin-left: 0rem;
 }
 .footer-contacts-number {
-  font-family: "Fira Sans";
-  font-size: .9rem;
-  font-weight: 300;
-  text-align: left;
-  color: #a9afb6;
-
-  margin-top: .5rem;
-  margin-left: .5rem;
+  margin-top: 1.5rem;
+  font-size: 0.875rem;
+}
+.footer-nav {
+  padding-top: 1rem;
+  border-top: solid 2px #3e4247;
 }
 .footer-link {
   display: block;
-  font-family: "Fira Sans";
-  font-size: .9rem;
-  line-height: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
   font-weight: 300;
-  color: #f3f3f3;
-
-  margin-top: .5rem;
+  color: #ffffff;
+  text-decoration: none;
 }
-.footer-contacts-title {
-  padding-top: .1rem;
-  color: #646971;
-  font-family: "Fira Sans";
-  font-size: .9rem;
-  font-weight: bold;
-  text-align: left;
-}
-.footer-contacts-title:nth-child(2) {
-  margin-top: 1rem;
-  border-top: 2px solid #3e4247;
-  padding-top: .8rem;
-}
-.footer-contacts-title:nth-child(1) {
-  margin-top: 1rem;
-}
-.footer-link-arrow {
-  margin-left: .4rem;
+.footer-link-last {
+  margin-top: 1.5rem;
 }
 .footer-text-copyright {
-  margin-top: 6.0rem;
-  margin-left: -.1rem;
-  line-height: 1.7;
-  font-family: "Fira Sans";
-  font-size: 11px;
+  padding-top: 4.2rem;
+  font-size: 0.6875rem;
   font-weight: 300;
-  text-align: left;
+  line-height: 1.6;
   color: #a9afb6;
-}
-.footer-contacts-title:nth-child(1) {
-  margin-left:.5rem;
-}
-.footer-contacts-text:nth-child(2),
-.footer-contacts-text:nth-child(3){
-  margin-top: 1rem;
-  margin-left: .51rem;
 }
