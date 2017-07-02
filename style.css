@@ -81,7 +81,6 @@ body {
 /*==============compass cards==============*/
 .compass-card-link {
   display: flex;
-  flex-direction: row;
 
   margin-left: .4rem;
   margin-top: 1.2rem;
@@ -140,20 +139,20 @@ body {
 .footer-contacts-title {
   margin: 0;
   margin-bottom: 0.9rem;
-  font-size: .9rem;
+  font-size: 0.875rem;
   font-weight: 700;
   line-height: 1.5;
   color: #646971;
 }
 .footer-contacts-text {
   margin-bottom: 1rem;
-  font-size: .9rem;
+  font-size: 0.875rem;
   font-weight: 300;
   color: #a9afb6;
 }
 .footer-contacts-number {
   margin-top: 1.5rem;
-  font-size: .9rem;
+  font-size: 0.875rem;
 }
 .footer-nav {
   padding-top: 1rem;
@@ -162,7 +161,7 @@ body {
 .footer-link {
   display: block;
   margin-bottom: 1rem;
-  font-size: .85rem;
+  font-size: 0.875rem;
   font-weight: 300;
   color: #ffffff;
   text-decoration: none;
@@ -172,7 +171,7 @@ body {
 }
 .footer-text-copyright {
   padding-top: 4.2rem;
-  font-size: 11px;
+  font-size: 0.6875rem;
   font-weight: 300;
   line-height: 1.6;
   color: #a9afb6;
