@@ -32,7 +32,6 @@
   color: #a9afb6;
   font-family: "Fira Sans";
 }
-
 .footer-contacts-title {
   margin: 0;
   margin-bottom: 0.9rem;
@@ -48,7 +47,7 @@
   color: #a9afb6;
 }
 .footer-contacts-number {
-  margin-top: 1.5rem;
+  margin-top: 1.2rem;
   font-size: 0.875rem;
 }
 .footer-nav {
