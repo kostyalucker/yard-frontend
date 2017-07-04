@@ -1,7 +1,7 @@
 /*================HEADLINE=================*/
 .complexes-headline {
-  padding-top: 1.5rem;
-  padding-left: 1.8rem;
+  padding-top: 1.4rem;
+  padding-left: 1.9rem;
 }
 .complexes-headline-title {
   font-family: Philosopher;
@@ -11,12 +11,11 @@
   text-align: left;
   color: #3e4247;
 
-  letter-spacing: .7px;
   margin: 0;
 }
 .complexes-headline-text {
   font-family: Fira Sans;
-  font-size: .9rem;
+  font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.57;
   text-align: left;
@@ -28,15 +27,15 @@
 .headline-button {
   position: absolute;
   right: 1.8rem;
-  bottom: 3.8rem;
+  bottom: 3.5rem;
 
   padding: 0.5rem .9rem;
   font-family: 'Fira Sans', sans-serif;
-  font-size: 10px;
+  font-size: .625rem;
   font-weight: 300;
-  line-height: 1.0;
+  line-height: 1;
   color: #00779a;
-  text-align: center;
+  text-align: left;
   background-color: #ffffff;
   border: solid 1px #e0e0e1;
   border-radius: 2px;
@@ -71,7 +70,7 @@
 }
 /*===================COMPLEXES-Info===============*/
 .complexes-info {
-  padding: 0rem 3rem;
+  padding: .2rem 5.2rem;
 }
 .complexes-info-wrap {
   display: flex; 
@@ -82,7 +81,7 @@
   font-family: Philosopher;
   font-size: 1.5rem;
   font-weight: bold;
-  line-height: 1.3;
+  line-height: 1.13;
   text-align: left;
   color: #3e4247;
 
@@ -98,7 +97,8 @@
 }
 /*==============complexes-DESCRIPTION=============*/
 .complex-specific {
-  padding-top: 2rem;
+  padding-top: 2.3rem;
+  padding-left: 2.1rem;
 }
 
 .complex-specific-title {
@@ -120,6 +120,7 @@
   flex: 0 0 43%;
   margin-bottom: .7rem;
   font-size: 1rem;
+  font-weight: 500;
   line-height: 1.38;
   color: #a9afb6;
   font-family: Fira Sans;
@@ -130,7 +131,7 @@
   margin: 0;
   font-family: Fira Sans;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.56;
   text-align: left;
   color: #3e4247;
@@ -139,17 +140,18 @@
 
 /*=================Extra-DESCRIPTION===========*/
 .complexes-extra-desc {
-  padding-top: 2.3rem;
+  padding-top: 2.6rem;
+  padding-left: 2.1rem;
 }
 .extra-desc-title {
- font-family: Philosopher;
- font-size: 1.5rem;
- font-weight: bold;
- line-height: 1.13;
- text-align: left;
- color: #3e4247;
+  font-family: Philosopher;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.13;
+  text-align: left;
+  color: #3e4247;
 
- margin: 0;
+  margin: 0;
 }
 .extra-desc-text {
  font-family: "Fira Sans";
@@ -163,6 +165,7 @@
 /*=======================infrastructure=============*/
 .complexes-infra {
   padding-bottom: 3rem;
+  padding-left: 2.1rem;
 }
 .complexes-infra-title {
   font-family: Philosopher;
@@ -172,7 +175,8 @@
   text-align: left;
   color: #3e4247;
   margin: 0;
-  padding-top: 1.5rem;
+
+  padding-top: 1rem;
 }
 .complexes-infra-text {
   font-family: Fira Sans;
@@ -189,13 +193,9 @@
 .complexes-offers {
   background-color: #f4f5f9;
 
-  padding: 2.6rem 0;
+  padding: 2.2rem 0;
   text-align: center;
-}
-.complexes-offers-item {
-  background: #fff;
-
-  padding: 1.6rem 2rem;
+  padding-bottom: 3.3rem;
 }
 .complexes-offers-title {
   font-family: Philosopher;
@@ -204,7 +204,6 @@
   line-height: 1.3;
   text-align: center;
   color: #3e4247;
-  letter-spacing: .025rem;
 
   padding-bottom: 0rem;
 }
@@ -251,50 +250,59 @@
   padding-top: .7rem;
   text-align: center;
 }
-
-
 /*==============complexes-guide=============*/
 .complexes-guide {
-  padding: 4.5rem 0 15rem;
+  padding: 4rem 0 14.5rem;
   background-color: #3e4247;
 }
 .complexes-guide-title {
   font-family: 'Philosopher';
-  font-size: 1.55rem;
+  font-size: 1.5rem;
   margin: 0;
-  padding-top: 7.4rem;
+  padding-top: 7.6rem;
   padding-bottom: 3rem;
+  padding-left: 1.1rem;
   color: #a9afb6;
 }
 .complexes-guide-subheading {
   font-family: 'Philosopher';
   font-size: 3rem;
   line-height: 1.25;
+  text-align: left;
   margin: 0;
   padding-bottom: 3rem;
+  padding-left: 1.1rem;
   color: #fff;
-
 }
 .complexes-guide-link {
   text-decoration: none;
   color: #00779a;
   font-family: Fira Sans;
+  font-size: 1rem;
+  text-align: left;
+
+  padding-left: 1.1rem;
 }
 .complexes-guide-img {
   width: 583px;
   height: 560px;
 }
 /*=============COMPLEXES-ADDReSS===============*/
+.complexes-address {
+  padding-bottom: 4rem;
+  padding-top: 1rem;
+}
 .complex-map {
-  margin-top: -10.3rem;
-  padding-bottom: 3.5rem;
+  margin-top: -11.1rem;
 }
 .address-map-img {
+  width: 583px;
   height: 306px;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, .5);
+  margin-left: 1rem;
 }
-
 .complexes-address-points {
+  width: 583px;
   background: #fff;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, .5);
 }
