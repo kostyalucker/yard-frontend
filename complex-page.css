@@ -1,9 +1,10 @@
+
 /*================HEADLINE=================*/
-.complexes-headline {
+.complex-headline {
   padding-top: 1.4rem;
   padding-left: 1rem;
 }
-.complexes-headline-title {
+.complex-headline-title {
   font-family: Philosopher;
   font-size: 2rem;
   font-weight: bold;
@@ -13,7 +14,7 @@
 
   margin: 0;
 }
-.complexes-headline-text {
+.complex-headline-text {
   font-family: Fira Sans;
   font-size: 0.875rem;
   font-weight: 300;
@@ -42,7 +43,7 @@
   cursor: pointer;
 }
 /*===============HERO SECTION=================*/
-.complexes-hero-wrap {
+.complex-hero-wrap {
   display: flex;
   flex-direction: row;
 
@@ -68,17 +69,18 @@
 
   padding: .5rem 1rem;
 }
-/*===================COMPLEXES-Info===============*/
-.complexes-info {
-  padding: .2rem 0;
+/*===================complex-Info===============*/
+.complex-info {
   padding-left: 1rem;
 }
-.complexes-info-wrap {
+.complex-info-wrap {
   display: flex; 
 
   border-bottom: solid 1px #e0e0e1;
+  padding-top: .2rem;
+  padding-bottom: .4rem;
 }
-.complexes-info-title {
+.complex-info-title {
   font-family: Philosopher;
   font-size: 1.5rem;
   font-weight: bold;
@@ -88,7 +90,7 @@
 
   padding-right: 3rem;
 }
-.complexes-info-small {
+.complex-info-small {
   font-family: Fira Sans;
   font-size: .9rem;
   font-weight: 300;
@@ -96,9 +98,9 @@
   text-align: left;
   color: #a9afb6;
 }
-/*==============complexes-DESCRIPTION=============*/
+/*==============complex-DESCRIPTION=============*/
 .complex-specific {
-  padding-top: 2.3rem;
+  padding-top: 2rem;
   padding-left: 1rem;
 }
 
@@ -121,6 +123,7 @@
   margin-bottom: .7rem;
   font-size: 1rem;
   line-height: 1.38;
+  text-align: left;
   color: #a9afb6;
   font-family: Fira Sans;
 }
@@ -137,8 +140,8 @@
   padding-left: 1.7rem;
 }
 
-/*=================Extra-DESCRIPTION===========*/
-.complexes-extra-desc {
+/*=================extra-description===========*/
+.complex-extra-desc {
   padding-top: 2.6rem;
   padding-left: 1rem;
 }
@@ -155,18 +158,18 @@
 .extra-desc-text {
  font-family: "Fira Sans";
  font-size: 1rem;
- line-height: 1.6;
+ line-height: 1.56;
  text-align: left;
  color: #3e4247;
 
  margin: 0;
 }
 /*=======================infrastructure=============*/
-.complexes-infra {
+.complex-infra {
   padding-bottom: 3rem;
   padding-left: 1rem;
 }
-.complexes-infra-title {
+.complex-infra-title {
   font-family: Philosopher;
   font-size: 1.5rem;
   font-weight: bold;
@@ -175,28 +178,25 @@
   color: #3e4247;
   margin: 0;
 
-  padding-top: 1rem;
+  padding-top: 2rem;
+  border-top: solid 1px #e0e0e1;
 }
-.complexes-infra-text {
+.complex-infra-text {
   font-family: Fira Sans;
   font-size: 1rem;
-  line-height: 1.38;
+  line-height: 1.1;
   text-align: left;
   color: #3e4247;
 }
-.container-border {
-  padding-top: 1rem;
-  border-top: solid 1px #e0e0e1;
-}
-/*============OFFERS==============*/
-.complexes-offers {
+/*============offers==============*/
+.complex-offers {
   background-color: #f4f5f9;
 
-  padding: 2.2rem 0;
+  padding: 3rem 0;
   text-align: center;
   padding-bottom: 3.3rem;
 }
-.complexes-offers-title {
+.complex-offers-title {
   font-family: Philosopher;
   font-size: 1.5rem;
   font-weight: bold;
@@ -206,7 +206,7 @@
 
   padding-bottom: 0rem;
 }
-.complexes-offers-item {
+.complex-offers-item {
   background: #fff;
 
   padding: 1.7rem 2.2rem;
@@ -218,6 +218,7 @@
   font-weight: bold;
   padding-bottom: 1.3rem;
   text-align: left;
+  color: #3e4247;
 }
 .complex-card-info {
   margin: 0;
@@ -237,24 +238,25 @@
 .complex-card-btn {
   text-align: center;
 
-  font-family: Fira Sans;
-  font-weight: 300;
+  font-size: 1rem;
+  font-weight: lighter;
+  font-family: "Fira Sans", sans-serif;
   display: inline-block;
-  padding: .75rem 2rem;
+  padding: .7rem 2rem;
   margin-top: 1rem;
-  text-decoration: none;
-  color: white;
-  border-radius: 2px;
+  color: #ffffff;
+  border-radius: 0.125rem;
+  line-height: 1.0;
   background-color: #000;
-  padding-top: .7rem;
-  text-align: center;
+  border: none;
+  cursor: pointer;
 }
-/*==============complexes-guide=============*/
-.complexes-guide {
+/*==============complex-guide=============*/
+.complex-guide {
   padding: 4rem 0 14.5rem;
   background-color: #3e4247;
 }
-.complexes-guide-title {
+.complex-guide-title {
   font-family: 'Philosopher';
   font-size: 1.5rem;
   margin: 0;
@@ -263,7 +265,7 @@
   padding-left: .5rem;
   color: #a9afb6;
 }
-.complexes-guide-subheading {
+.complex-guide-subheading {
   font-family: 'Philosopher';
   font-size: 3rem;
   line-height: 1.25;
@@ -273,7 +275,7 @@
   padding-left: .5rem;
   color: #fff;
 }
-.complexes-guide-link {
+.complex-guide-link {
   text-decoration: none;
   color: #00779a;
   font-family: Fira Sans;
@@ -282,44 +284,45 @@
 
   padding-left: .5rem;
 }
-.complexes-guide-img {
+.complex-guide-img {
   width: 592px;
   height: 568px;
 
   padding-top: .4rem;
 }
-/*=============complexes-address===============*/
-.complexes-address {
+/*=============complex-address===============*/
+.complex-address {
   padding-bottom: 4rem;
   padding-top: 1rem;
 }
 .complex-map {
   margin-top: -12.4rem;
 }
-.address-map-img {
+.complex-map-img {
   width: 591px;
   height: 306px;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, .5);
   margin-left: .5rem;
 }
-.complexes-address-points {
+.complex-address-points {
   padding: 0;
   margin-right: .5rem;
   background: #fff;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, .5);
 }
-.complexes-address-point {
+.complex-address-point {
   padding: 1.6rem 1.5rem;
   border-bottom: solid 1px #e0e0e1;
 }
-.address-point-title {
+.complex-point-title {
   font-family: Fira Sans;
   font-size: 1rem;
   font-weight: 500;
   margin: 0;
   padding-bottom: .85rem;
+  color: #3e4247;
 }
-.address-point-text {
+.complex-point-text {
   font-family: Fira Sans;
   font-size: 1rem;
   margin: 0;
