@@ -1,8 +1,9 @@
 import React from 'react';
+import { Grid, Row, Col } from 'react-flexbox-grid';
 
 export default props => {
   return (
-    <div className="col-xs-4">
+    <Col xs={4}>
       <div className="complex-offers-item">
         <h3 className="complex-card-title">
           {props.title}
@@ -23,6 +24,6 @@ export default props => {
            {props.button}
         </div>
       </div>
-    </div>
+    </Col>
   );
 };

@@ -1,12 +1,13 @@
 import React from 'react';
 import OffersCard from './OffersCard';
+import { Grid, Row, Col } from 'react-flexbox-grid';
 
 export default () => {
   return (
     <section className="complex-offers">
-      <div className="container">
+      <Grid>
         <h2 className="complex-offers-title">Предложения в ЖК «Полянка/44»</h2>
-        <div className="row">
+        <Row>
           <OffersCard 
             title="1-комнатные квартиры"
             nameFirst="Площадь"
@@ -31,8 +32,8 @@ export default () => {
             valueSecond="от 20.3 до 84.2 млн руб"
             button="Посмотреть предложения"
            /> 
-        </div>
-      </div>
+        </Row>
+      </Grid>
     </section>
   );
 };

@@ -1,10 +1,11 @@
 import React from 'react';
 import cardimg from '../../img/bitmap.jpg';
 import { Link } from 'react-router-dom';
+import { Grid, Row, Col } from 'react-flexbox-grid';
 
 export default props => {
   return (
-    <section className="container">
+    <Grid>
       <Link className="compass-card-link" to='/complex'>
          <img
            src={cardimg}
@@ -23,6 +24,6 @@ export default props => {
            </p>
          </article>
       </Link>
-    </section>  
+    </Grid>  
   );
 };

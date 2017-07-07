@@ -1,9 +1,10 @@
 import React from 'react';
+import { Grid, Row, Col } from 'react-flexbox-grid';
 
 export default () => {
   return (
     <section className="complex-headline">
-      <div className="container">
+      <Grid>
         <div className="complex-headline-wrap">
           <h1 className="complex-headline-title">Жилой комплекс «Полянка/44»</h1>
           <p className="complex-headline-text">Район Якиманка, улица Большая Полянка, дом 44 • 119180</p>
@@ -11,7 +12,7 @@ export default () => {
             <button className="headline-button">В избранное</button>
           </div>
         </div>
-      </div>
+      </Grid>
     </section>
   );
 };
