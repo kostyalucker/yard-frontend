@@ -5,14 +5,14 @@ export default () => {
   return (
     <div className="cards">
       <Card
-        district="SOUTH BEACH, SAN FRANCISCO"
+        location="SOUTH BEACH, SAN FRANCISCO"
         address="764 Metropolitan Avenue"
         text="The Lewis Steel Building is a masterful industrial conversion located in
               the heart of Williamsburg. Located at 76 North 4th Street, the former 1930's steel factory has been
               transformed into 83 individually unique and luxury loft apartments."
       />
       <Card
-        district="MIDTOWN EAST, MANHATTAN"
+        location="MIDTOWN EAST, MANHATTAN"
         address="100 East 53rd Street"
         text="One Hundred East Fifty Third Street by Foster + Partners is a limited 
               collection of modern residences in Midtown Manhattan's Cultural District. 
@@ -20,7 +20,7 @@ export default () => {
               the 63-story tower are generously proportioned."
       />
       <Card
-        district="NOLITA, MANHATTAN"
+        location="NOLITA, MANHATTAN"
         address="152 Elizabeth"
         text="152 Elizabeth is an ultra-luxury condominium building—the first in 
               New York City designed by Japanese master architect Tadao Ando. 
