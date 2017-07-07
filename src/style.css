@@ -1,9 +1,3 @@
-body {
-  background-image: url(./img/background.png);
-  background-repeat: repeat;
-  background-color: #eaebf0;
-  background-size: 1.5%;
-}
 /*=============Compass-develop=============*/
 .compass-develop {
   padding: 5rem;

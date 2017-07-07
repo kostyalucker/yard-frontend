@@ -1,7 +1,14 @@
 body {
+  background-image: url(./img/background.png);
+  background-repeat: repeat;
+  background-color: #eaebf0;
+  background-size: 1.5%;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased;
   -webkit-line-break: after-white-space;
+}
+.bg-complex {
+  background: #ffffff;
 }
 /*=====Header=======*/
 .header {
