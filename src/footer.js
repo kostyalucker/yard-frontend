@@ -3,11 +3,11 @@ import arrowIcon from './img/arrow-icon.svg';
 
 export default () => {
   return (
-    <footer class="footer">
+  <footer class="footer">
     <div class="container">
       <div class="row">
         <div class="col-xs-4">
-          <div class="footer-contacts">
+            <div class="footer-contacts">
             <h4 class="footer-contacts-title">ООО «Ярд»</h4>
             <p class="footer-contacts-text">ОГРН 1175074002531</p>
             <p class="footer-contacts-text">ИНН 5036165365</p>
@@ -53,4 +53,8 @@ export default () => {
     </div>
   </footer>
   );
+};
+
+x - function() {
+  return()
 };
