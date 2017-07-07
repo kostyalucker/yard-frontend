@@ -3,18 +3,18 @@ import headerLogo from './img/compass-logo.svg';
 
 export default () => {
   return (
-    <header class="header">
-      <div class="container">
-        <div class="header-wrap">
-          <img class="header-logo" src="img/compass-logo.svg" alt="logo"/>
+    <header className="header">
+      <div className="container">
+        <div className="header-wrap">
+          <img className="header-logo" src={headerLogo} alt="logo"/>
           <nav>
-            <a class="header-nav-link" href="#">
+            <a className="header-nav-link" href="/">
               Купить
             </a>
-            <a class="header-nav-link" href="#">
+            <a className="header-nav-link" href="/">
               Снять
             </a>
-            <a class="header-nav-link" href="#">
+            <a className="header-nav-link" href="/">
               Наши агенты
             </a>
           </nav>

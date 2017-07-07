@@ -5,7 +5,7 @@ export default () => {
     return (
       <section className="compass-cards">
         <div className="container">
-          <a className="compass-card-link" href="#">
+          <a className="compass-card-link" href="/">
             <img className="compass-card-img" src={cardimg} alt="bitmap"/>
             <article className="compass-card-info">
               <p className="compass-card-location">SOUTH BEACH, SAN FRANCISCO</p>
@@ -17,7 +17,7 @@ export default () => {
               </p>
             </article>
           </a>
-          <a className="compass-card-link" href="#">
+          <a className="compass-card-link" href="/">
             <img className="compass-card-img" src={cardimg} alt="bitmap" />
             <article className="compass-card-info">
               <p className="compass-card-location">MIDTOWN EAST, MANHATTAN</p>
@@ -30,7 +30,7 @@ export default () => {
               </p>
             </article>
           </a>
-          <a className="compass-card-link" href="#">
+          <a className="compass-card-link" href="/">
             <img className="compass-card-img" src={cardimg} alt="bitmap"/>
             <article className="compass-card-info">
               <p className="compass-card-location">NOLITA, MANHATTAN</p>
