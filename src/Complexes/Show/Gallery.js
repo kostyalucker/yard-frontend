@@ -1,9 +1,9 @@
 import React from 'react';
-import photo1 from './img/bitmap1.png';
-import photo2 from './img/bitmap2.png';
-import photo3 from './img/bitmap3.png';
-import photo4 from './img/bitmap4.png';
-import photo5 from './img/bitmap5.png';
+import photo1 from '../../img/bitmap1.png';
+import photo2 from '../../img/bitmap2.png';
+import photo3 from '../../img/bitmap3.png';
+import photo4 from '../../img/bitmap4.png';
+import photo5 from '../../img/bitmap5.png';
 
 export default () => {
   return (
