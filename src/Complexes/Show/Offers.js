@@ -1,6 +1,6 @@
 import React from 'react';
 import OffersCard from './OffersCard';
-import { Grid, Row, Col } from 'react-flexbox-grid';
+import { Grid, Row } from 'react-flexbox-grid';
 
 export default () => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Row, Col } from 'react-flexbox-grid';
+import { Col } from 'react-flexbox-grid';
 
 export default props => {
   return (

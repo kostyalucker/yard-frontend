@@ -1,5 +1,5 @@
 import React from 'react';
-import arrowIcon from './img/combined-shape.svg';
+import arrowIcon from './combined-shape.svg';
 
 export default () => {
   return (
