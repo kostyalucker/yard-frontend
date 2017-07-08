@@ -1,12 +1,10 @@
 import React from "react";
-import guideImage from "../../img/polyanka-photo.png";
-import guideMap from "../../img/map.png";
 import GuideCard from "./GuideCard";
 import { Grid, Row, Col } from "react-flexbox-grid";
 
 export default () => {
   return (
-    <section className="Jakimanka">
+    <div>
       <div className="complex-guide">
         <Grid>
           <Row>
@@ -20,7 +18,11 @@ export default () => {
               </a>
             </Col>
             <Col xs={6}>
-              <img src={guideImage} alt="1" className="complex-guide-img" />
+              <img
+                src={process.env.PUBLIC_URL + "./img/polyanka-photo.png"}
+                alt="1"
+                className="complex-guide-img"
+              />
             </Col>
           </Row>
         </Grid>
@@ -31,7 +33,11 @@ export default () => {
             <Row>
               <Col xs={6}>
                 <div className="complex-address-map">
-                  <img src={guideMap} alt="Map" className="complex-map-img" />
+                  <img
+                    src={process.env.PUBLIC_URL + "./img/map.png"}
+                    alt="Map"
+                    className="complex-map-img"
+                  />
                 </div>
               </Col>
               <Col xs={6}>
@@ -48,6 +54,6 @@ export default () => {
           </div>
         </Grid>
       </div>
-    </section>
+    </div>
   );
 };

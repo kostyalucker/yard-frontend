@@ -1,5 +1,5 @@
 body {
-  background-image: url(./img/background.png);
+  background-image: url(%PUBLIC_URL%/img/background.png);
   background-repeat: repeat;
   background-color: #eaebf0;
   background-size: 1.5%;

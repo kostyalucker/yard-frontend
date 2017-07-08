@@ -1,17 +1,23 @@
 import React from "react";
-import InfoItem from "./InfoItem";
-import { Grid } from "react-flexbox-grid";
+import { Grid, Row } from "react-flexbox-grid";
 
-export default () => {
+export default props => {
   return (
-    <section className="complex-info">
-      <Grid>
-        <div className="complex-info-wrap">
-          <InfoItem title="950" subheading="предложений" />
-          <InfoItem title="John McAslan + Partners" subheading="архитектор" />
-          <InfoItem title="Группа «ПСН»" subheading="застройщик" />
-        </div>
-      </Grid>
-    </section>
+    <Grid>
+      <Row>
+        <h2 className="complex-info-title">
+          {props.offers}
+          <small className="complex-info-subheading">предложений</small>
+        </h2>
+        <h2 className="complex-info-title">
+          {props.architect}
+          <small className="complex-info-subheading">предложений</small>
+        </h2>
+        <h2 className="complex-info-title">
+          {props.builder}
+          <small className="complex-info-subheading">предложений</small>
+        </h2>
+      </Row>
+    </Grid>
   );
 };

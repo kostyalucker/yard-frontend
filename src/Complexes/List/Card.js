@@ -1,5 +1,4 @@
 import React from "react";
-import cardimg from "../../img/bitmap.jpg";
 import { Link } from "react-router-dom";
 import { Grid } from "react-flexbox-grid";
 
@@ -7,7 +6,11 @@ export default props => {
   return (
     <Grid>
       <Link className="compass-card-link" to="/complex">
-        <img src={cardimg} className="compass-card-img" alt="complex-preview" />
+        <img
+          src={process.env.PUBLIC_URL + "./img/bitmap.jpg"}
+          className="compass-card-img"
+          alt="complex-preview"
+        />
         <article className="compass-card-info">
           <p className="compass-card-location">
             {props.location}

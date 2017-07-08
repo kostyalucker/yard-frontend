@@ -9,28 +9,19 @@ export default () => {
         <h2 className="complex-offers-title">Предложения в ЖК «Полянка/44»</h2>
         <Row>
           <OffersCard
-            title="1-комнатные квартиры"
-            nameFirst="Площадь"
-            valueFirst="от 59 до 120 м²"
-            nameSecond="Стоимость"
-            valueSecond="от 20.3 до 84.2 млн руб"
-            button="Посмотреть предложения"
+            roomsCount="1"
+            area="от 59 до 120 м²"
+            value="от 20.3 до 84.2 млн руб"
           />
           <OffersCard
-            title="2-комнатные квартиры"
-            nameFirst="Площадь"
-            valueFirst="от 59 до 120 м²"
-            nameSecond="Стоимость"
-            valueSecond="от 20.3 до 84.2 млн руб"
-            button="Посмотреть предложения"
+            roomsCount="2"
+            area="от 59 до 120 м²"
+            value="от 20.3 до 84.2 млн руб"
           />
           <OffersCard
-            title="3-комнатные квартиры"
-            nameFirst="Площадь"
-            valueFirst="от 59 до 120 м²"
-            nameSecond="Стоимость"
-            valueSecond="от 20.3 до 84.2 млн руб"
-            button="Посмотреть предложения"
+            roomsCount="3"
+            area="от 59 до 120 м²"
+            value="от 20.3 до 84.2 млн руб"
           />
         </Row>
       </Grid>

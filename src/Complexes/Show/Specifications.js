@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid, Row, Col } from "react-flexbox-grid";
 
-export default () => {
+export default props => {
   return (
     <section className="complex-specific">
       <Grid>
@@ -12,16 +12,34 @@ export default () => {
               <dt className="complex-specific-list-title">
                 Количество квартир:
               </dt>
-              <dd className="complex-specific-list-value">1 503</dd>
+              <dd className="complex-specific-list-value">
+                {props.flat}
+              </dd>
               <dt className="complex-specific-list-title">Статус:</dt>
-              <dd className="complex-specific-list-value">Квартиры</dd>
+              <dd className="complex-specific-list-value">
+                {props.status}
+              </dd>
               <dt className="complex-specific-list-title">Цены:</dt>
               <dd className="complex-specific-list-value">
-                от 5.3 до 143.5 млн
+                от {props.price.min} до {props.price.max} млн руб.
               </dd>
-              <dt className="complex-specific-list-title">Безопасность</dt>
+            </dl>
+          </Col>
+          <Col xs={4}>
+            <dl className="complex-specific-list">
+              <dt className="complex-specific-list-title">
+                Количество квартир:
+              </dt>
               <dd className="complex-specific-list-value">
-                Охраняемая территория
+                {props.flat}
+              </dd>
+              <dt className="complex-specific-list-title">Статус:</dt>
+              <dd className="complex-specific-list-value">
+                {props.status}
+              </dd>
+              <dt className="complex-specific-list-title">Цены:</dt>
+              <dd className="complex-specific-list-value">
+                от {props.price.min} до {props.price.max} млн руб.
               </dd>
             </dl>
           </Col>
@@ -30,39 +48,17 @@ export default () => {
               <dt className="complex-specific-list-title">
                 Количество квартир:
               </dt>
-              <dd className="complex-specific-list-value">1 503</dd>
-              <dt className="complex-specific-list-title">
-                Количество квартир:
-              </dt>
-              <dd className="complex-specific-list-value">1 503</dd>
-              <dt className="complex-specific-list-title">
-                Количество квартир:
-              </dt>
-              <dd className="complex-specific-list-value">1 503</dd>
-              <dt className="complex-specific-list-title">
-                Количество квартир:
-              </dt>
-              <dd className="complex-specific-list-value">1 503</dd>
-            </dl>
-          </Col>
-          <Col xs={4}>
-            <dl className="complex-specific-list">
-              <dt className="complex-specific-list-title">
-                Количество квартир:
-              </dt>
-              <dd className="complex-specific-list-value">1 503</dd>
-              <dt className="complex-specific-list-title">
-                Количество квартир:
-              </dt>
-              <dd className="complex-specific-list-value">1 503</dd>
-              <dt className="complex-specific-list-title">
-                Количество квартир:
-              </dt>
-              <dd className="complex-specific-list-value">1 503</dd>
-              <dt className="complex-specific-list-title">
-                Количество квартир:
-              </dt>
-              <dd className="complex-specific-list-value">1 503</dd>
+              <dd className="complex-specific-list-value">
+                {props.flat}
+              </dd>
+              <dt className="complex-specific-list-title">Статус:</dt>
+              <dd className="complex-specific-list-value">
+                {props.status}
+              </dd>
+              <dt className="complex-specific-list-title">Цены:</dt>
+              <dd className="complex-specific-list-value">
+                от {props.price.min} до {props.price.max} млн руб.
+              </dd>
             </dl>
           </Col>
         </Row>
