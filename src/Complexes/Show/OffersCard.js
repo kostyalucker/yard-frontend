@@ -1,5 +1,5 @@
-import React from 'react';
-import { Col } from 'react-flexbox-grid';
+import React from "react";
+import { Col } from "react-flexbox-grid";
 
 export default props => {
   return (
@@ -9,19 +9,19 @@ export default props => {
           {props.title}
         </h3>
         <p className="complex-card-info">
-           <span className="complex-card-name">
-             {props.nameFirst}
-           </span>
-           {props.valueFirst}
+          <span className="complex-card-name">
+            {props.nameFirst}
+          </span>
+          {props.valueFirst}
         </p>
         <p className="complex-card-info">
-           <span className="complex-card-name">
-             {props.nameSecond}
-           </span>
-           {props.valueSecond}
+          <span className="complex-card-name">
+            {props.nameSecond}
+          </span>
+          {props.valueSecond}
         </p>
         <div className="complex-card-btn">
-           {props.button}
+          {props.button}
         </div>
       </div>
     </Col>

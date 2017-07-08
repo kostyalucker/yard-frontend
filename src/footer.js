@@ -1,5 +1,5 @@
-import React from 'react';
-import arrowIcon from './combined-shape.svg';
+import React from "react";
+import arrowIcon from "./combined-shape.svg";
 
 export default () => {
   return (
@@ -27,7 +27,12 @@ export default () => {
                 Резиденция Монэ
               </a>
               <a href="/" className="footer-link footer-link-last">
-                Все ЖК Москвы <img className="footer-link-arrow" src={arrowIcon} alt="arrow"/>
+                Все ЖК Москвы
+                <img
+                  className="footer-link-arrow"
+                  src={arrowIcon}
+                  alt="arrow"
+                />
               </a>
             </nav>
           </div>
@@ -37,7 +42,7 @@ export default () => {
               <a href="/" className="footer-link">
                 Команда
               </a>
-             <a href="/" className="footer-link">
+              <a href="/" className="footer-link">
                 О Компании
               </a>
             </nav>
@@ -46,7 +51,10 @@ export default () => {
         <div className="row">
           <div className="col-xs-8 col-xs-offset-4">
             <p className="footer-text-copyright">
-              Любая информация, представленная на данном сайте, носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями статьи 437 ГК РФ. © ООО «Ярд», 2017
+              Любая информация, представленная на данном сайте, носит
+              исключительно информационный характер и ни при каких условиях не
+              является публичной офертой, определяемой положениями статьи 437 ГК
+              РФ. © ООО «Ярд», 2017
             </p>
           </div>
         </div>

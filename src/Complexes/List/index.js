@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import Develop from './Develop';
-import Contact from './Contact';
-import Cards from './Cards';
+import Develop from "./Develop";
+import Contact from "./Contact";
+import Cards from "./Cards";
 
 export default () => {
   return (

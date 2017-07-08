@@ -7,7 +7,7 @@
   align-items: center;
 }
 .compass-develop-logo {
-  width:418.9px;
+  width: 418.9px;
   height: 131px;
 }
 /*====================compass contact=================*/
@@ -60,7 +60,7 @@
   text-decoration: none;
 }
 .compass-card-link:hover {
-  box-shadow: 0px 0px 20px rgba(0,0,0,.3);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, .3);
 }
 .compass-card-img {
   flex-shrink: 0;
@@ -72,10 +72,10 @@
   margin-bottom: 5.6rem;
 }
 .compass-card-location {
- font-family: Monaco, Menlo, Consolas, monospace;
- font-size: 1.1rem;
- text-transform: uppercase;
- color: #646971;
+  font-family: Monaco, Menlo, Consolas, monospace;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  color: #646971;
 }
 .compass-card-title {
   margin-top: 1.9rem;
@@ -93,4 +93,5 @@
   font-size: 1rem;
   line-height: 1.5;
   text-align: left;
-  color: #3e4247; }
+  color: #3e4247;
+}
