@@ -1,39 +1,54 @@
 import React from "react";
 import OffersCard from "./OffersCard";
-import { Grid, Row } from "react-flexbox-grid";
+import { Grid, Row, Col } from "react-flexbox-grid";
+import styled from "styled-components";
+
+const Offers = styled.section`
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #f4f5f9;
+`;
+
+const Title = styled.h3`
+  margin: 0;
+  margin-bottom: 1.5rem;
+  font-family: Philosopher, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.13;
+  color: #3e4247;
+  text-align: center;
+`;
 
 export default () => {
   return (
-    <section className="complex-offers">
+    <Offers>
       <Grid>
-        <h2 className="complex-offers-title">Предложения в ЖК «Полянка/44»</h2>
+        <Title>Предложения в ЖК «Полянка/44»</Title>
         <Row>
-          <OffersCard
-            title="1-комнатные квартиры"
-            nameFirst="Площадь"
-            valueFirst="от 59 до 120 м²"
-            nameSecond="Стоимость"
-            valueSecond="от 20.3 до 84.2 млн руб"
-            button="Посмотреть предложения"
-          />
-          <OffersCard
-            title="2-комнатные квартиры"
-            nameFirst="Площадь"
-            valueFirst="от 59 до 120 м²"
-            nameSecond="Стоимость"
-            valueSecond="от 20.3 до 84.2 млн руб"
-            button="Посмотреть предложения"
-          />
-          <OffersCard
-            title="3-комнатные квартиры"
-            nameFirst="Площадь"
-            valueFirst="от 59 до 120 м²"
-            nameSecond="Стоимость"
-            valueSecond="от 20.3 до 84.2 млн руб"
-            button="Посмотреть предложения"
-          />
+          <Col xs={4}>
+            <OffersCard
+              rooms="1"
+              size={{ min: 59, max: 120 }}
+              price={{ min: 20.3, max: 84.2 }}
+            />
+          </Col>
+          <Col xs={4}>
+            <OffersCard
+              rooms="2"
+              size={{ min: 59, max: 120 }}
+              price={{ min: 20.3, max: 84.2 }}
+            />
+          </Col>
+          <Col xs={4}>
+            <OffersCard
+              rooms="3"
+              size={{ min: 59, max: 120 }}
+              price={{ min: 20.3, max: 84.2 }}
+            />
+          </Col>
         </Row>
       </Grid>
-    </section>
+    </Offers>
   );
 };

@@ -13,7 +13,6 @@ const Header = styled.header`
 
 const Logo = styled.img`
   margin-right: 1.5rem;
-  margin-left: 1rem;
 `;
 
 const NavLink = styled(Link)`

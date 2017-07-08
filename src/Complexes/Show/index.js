@@ -1,4 +1,6 @@
 import React from "react";
+import styled from "styled-components";
+import BodyClassName from "react-body-classname";
 
 import ComplexHeadline from "./ComplexHeadline";
 import Gallery from "./Gallery";
@@ -9,17 +11,27 @@ import Infrastructure from "./Infrastructure";
 import Offers from "./Offers";
 import Guide from "./Guide";
 
+const Complex = styled(BodyClassName)`
+  background: #ffffff;
+`;
+
 export default () => {
   return (
-    <div className="bg-complex">
-      <ComplexHeadline />
-      <Gallery />
-      <Info />
-      <Specifications />
-      <Description />
-      <Infrastructure />
-      <Offers />
-      <Guide />
-    </div>
+    <Complex>
+      <div className="App">
+        <ComplexHeadline />
+        <Gallery />
+        <Info />
+        <Specifications
+          counter="1 503"
+          status="Квартиры"
+          price={{ min: 8.4, max: 20.2 }}
+        />
+        <Description />
+        <Infrastructure />
+        <Offers />
+        <Guide />
+      </div>
+    </Complex>
   );
 };
