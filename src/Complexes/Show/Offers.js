@@ -9,7 +9,7 @@ const Offers = styled.section`
   background-color: #f4f5f9;
 `;
 
-const Title = styled.h3`
+const Heading = styled.h3`
   margin: 0;
   margin-bottom: 1.5rem;
   font-family: Philosopher, sans-serif;
@@ -24,7 +24,7 @@ export default () => {
   return (
     <Offers>
       <Grid>
-        <Title>Предложения в ЖК «Полянка/44»</Title>
+        <Heading>Предложения в ЖК «Полянка/44»</Heading>
         <Row>
           <Col xs={4}>
             <OffersCard

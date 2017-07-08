@@ -1,13 +1,13 @@
 import React from "react";
 import { Grid, Row, Col } from "react-flexbox-grid";
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Infratructure = styled.div`
   padding-bottom: 3.5rem;
   padding-left: 1rem;
 `;
 
-const Title = styled.h3`
+const Heading = styled.h3`
   border-top: solid 1px #eaebf0;
   padding-top: 2.2rem;
   margin-bottom: 1rem;
@@ -30,7 +30,7 @@ export default () => {
   return (
     <Grid>
       <Infratructure>
-        <Title>Инфраструктура</Title>
+        <Heading>Инфраструктура</Heading>
         <Row>
           <Col xs={2}>
             <Text>Бассейн</Text>

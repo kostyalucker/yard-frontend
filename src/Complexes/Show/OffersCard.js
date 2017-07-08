@@ -1,12 +1,12 @@
 import React from "react";
-import styled from 'styled-components';
+import styled from "styled-components";
 
-const Item = styled.div`
+const Card = styled.div`
   padding: 1.5rem 2rem;
   background-color: white;
 `;
 
-const Title = styled.h4`
+const Heading = styled.h4`
   font-family: Philosopher, sans-serif;
   font-size: 1.25rem;
   margin: 0;
@@ -52,14 +52,18 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
-
-export default props => 
-  <Item>
-    <Title>{props.rooms}-комнатные квартиры</Title>
+export default props =>
+  <Card>
+    <Heading>
+      {props.rooms}-комнатные квартиры
+    </Heading>
     <Key>Площадь</Key>
-    <Value>от {props.size.min} до {props.size.max} м²</Value>
+    <Value>
+      от {props.size.min} до {props.size.max} м²
+    </Value>
     <Key>Стоимость</Key>
-    <Value>от {props.price.min} до {props.price.max} млн руб</Value>
+    <Value>
+      от {props.price.min} до {props.price.max} млн руб
+    </Value>
     <Button>Посмотреть предложения</Button>
-  </Item>;
-  
+  </Card>;

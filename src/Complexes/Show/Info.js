@@ -12,7 +12,7 @@ const Info = styled.section`
 
 const Item = styled.div`margin-right: 3rem;`;
 
-const Title = styled.h2`
+const Heading = styled.h2`
   font-family: Philosopher;
   font-size: 1.5rem;
   font-weight: bold;
@@ -38,19 +38,19 @@ export default () => {
     <Grid>
       <Info>
         <Item>
-          <Title>
+          <Heading>
             950<Subheading>предложений</Subheading>
-          </Title>
+          </Heading>
         </Item>
         <Item>
-          <Title>
+          <Heading>
             John McAslan + Partners<Subheading>архитектор</Subheading>
-          </Title>
+          </Heading>
         </Item>
         <Item>
-          <Title>
+          <Heading>
             Группа «ПСН»<Subheading>застройщик</Subheading>
-          </Title>
+          </Heading>
         </Item>
       </Info>
     </Grid>

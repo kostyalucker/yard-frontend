@@ -11,9 +11,7 @@ const Header = styled.header`
   background-color: #ffffff;
 `;
 
-const Logo = styled.img`
-  margin-right: 1.5rem;
-`;
+const Logo = styled.img`margin-right: 1.5rem;`;
 
 const NavLink = styled(Link)`
   text-decoration: none;
@@ -26,12 +24,6 @@ const NavLink = styled(Link)`
   &:last-child {
     margin-right: 0;
   }
-`;
-
-const Wrap = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 `;
 
 const Navigation = styled.nav`

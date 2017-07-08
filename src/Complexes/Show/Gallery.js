@@ -1,6 +1,6 @@
 import React from "react";
-import styled from 'styled-components';
-import { Grid } from 'react-flexbox-grid';
+import styled from "styled-components";
+import { Grid } from "react-flexbox-grid";
 
 const Gallery = styled.div`
   display: flex;
@@ -24,25 +24,21 @@ const Button = styled.button`
   padding: .5rem 1rem;
 `;
 
-const ButtonWrap = styled.div`
-  position: relative;
-`;
+const ButtonWrap = styled.div`position: relative;`;
 
-const Image = styled.img`
-  height: 400px;
-`;
+const Image = styled.img`height: 400px;`;
 export default () => {
   return (
     <div>
       <Gallery>
-        <Image src={process.env.PUBLIC_URL + './img/bitmap1.png'} />
-        <Image src={process.env.PUBLIC_URL + './img/bitmap2.png'} />
-        <Image src={process.env.PUBLIC_URL + './img/bitmap3.png'} />
-        <Image src={process.env.PUBLIC_URL + './img/bitmap4.png'} />
-        <Image src={process.env.PUBLIC_URL + './img/bitmap5.png'}/>
+        <Image src={process.env.PUBLIC_URL + "./img/bitmap1.png"} />
+        <Image src={process.env.PUBLIC_URL + "./img/bitmap2.png"} />
+        <Image src={process.env.PUBLIC_URL + "./img/bitmap3.png"} />
+        <Image src={process.env.PUBLIC_URL + "./img/bitmap4.png"} />
+        <Image src={process.env.PUBLIC_URL + "./img/bitmap5.png"} />
       </Gallery>
       <ButtonWrap>
-          <Button>41 фотография</Button>
+        <Button>41 фотография</Button>
       </ButtonWrap>
     </div>
   );

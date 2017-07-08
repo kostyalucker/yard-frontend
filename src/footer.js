@@ -12,7 +12,7 @@ const Footer = styled.footer`
   font-family: "Fira Sans";
 `;
 
-const Title = styled.h4`
+const Heading = styled.h4`
   margin: 0;
   margin-bottom: 0.9rem;
   font-size: 0.875rem;
@@ -38,7 +38,7 @@ const NavLink = styled(Link)`
   text-decoration: none;
 `;
 
-const Nav = styled.nav`
+const Navigation = styled.nav`
   padding-top: 1rem;
   border-top: solid 2px #3e4247;
 `;
@@ -80,27 +80,27 @@ export default () => {
       <Grid>
         <Row>
           <Col xs={4}>
-            <Title>ООО «Ярд»</Title>
+            <Heading>ООО «Ярд»</Heading>
             <Text>ОГРН 1175074002531</Text>
             <Text>ИНН 5036165365</Text>
             <TextLast>+7 (999) 821-14-88</TextLast>
           </Col>
           <Col xs={2}>
-            <Nav>
-              <Title>Жилые комплексы</Title>
+            <Navigation>
+              <Heading>Жилые комплексы</Heading>
               <NavLink to="/">ВТБ Арена Парк</NavLink>
               <NavLink to="/">Садовые кварталы</NavLink>
               <NavLink to="/">Резиденция Монэ</NavLink>
               <LinkLast to="/">
                 Все ЖК Москвы <NavArrow src={arrowIcon} />
               </LinkLast>
-            </Nav>
+            </Navigation>
           </Col>
-          <Nav>
-            <Title>Компания</Title>
+          <Navigation>
+            <Heading>Компания</Heading>
             <NavLink to="/">Команда</NavLink>
             <NavLink to="/">О компании</NavLink>
-          </Nav>
+          </Navigation>
           <Col xs={2} />
         </Row>
         <Row>

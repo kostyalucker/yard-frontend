@@ -7,7 +7,7 @@ const Specifications = styled.section`
   padding-left: 1rem;
 `;
 
-const Title = styled.h2`
+const Heading = styled.h2`
   margin-top: 2.3rem;
   margin-bottom: 0;
   padding-bottom: 1.125rem;
@@ -50,7 +50,7 @@ const Value = styled.dd`
 export default props =>
   <Specifications>
     <Grid>
-      <Title>Характеристики</Title>
+      <Heading>Характеристики</Heading>
       <Row>
         <Col xs={4}>
           <List>

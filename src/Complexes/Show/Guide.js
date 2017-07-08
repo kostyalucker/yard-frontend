@@ -11,7 +11,7 @@ const Guide = styled.section`
   color: #ffffff;
 `;
 
-const Title = styled.h5`
+const Heading = styled.h5`
   margin: 0;
   margin-top: 7.5rem;
   margin-bottom: 3rem;
@@ -67,7 +67,7 @@ export default () => {
       <Grid>
         <Row>
           <Col xs={6}>
-            <Title>Якиманка</Title>
+            <Heading>Якиманка</Heading>
             <Description>
               Исторический центр Москвы в двух<br /> километрах от Кремля
             </Description>

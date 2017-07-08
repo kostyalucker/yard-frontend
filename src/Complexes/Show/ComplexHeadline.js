@@ -2,7 +2,7 @@ import React from "react";
 import { Grid, Row } from "react-flexbox-grid";
 import styled from "styled-components";
 
-const Title = styled.h1`
+const Heading = styled.h1`
   margin-bottom: 0;
   margin-top: 25px;
   font-family: "Philosopher", sans-serif;
@@ -44,7 +44,7 @@ export default () => {
     <Grid>
       <Row between="xs">
         <Address>
-          <Title>Жилой комплекс «Полянка/44»</Title>
+          <Heading>Жилой комплекс «Полянка/44»</Heading>
           <Text>Район Якиманка, улица Большая Полянка, дом 44 • 119180</Text>
         </Address>
         <Button>В избранное</Button>

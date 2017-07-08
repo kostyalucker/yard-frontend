@@ -1,10 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 
-const Item = styled.div`
+const Place = styled.div`
   padding: 1.5rem;
   padding-bottom: 1.57rem;
   border-bottom: solid 1px #e0e0e1;
+
+  &:last-child {
+    margin-bottom: 0;
+    border: 0;
+  }
 `;
 
 const Address = styled.h6`
@@ -28,13 +33,13 @@ const Distance = styled.p`
 
 export default props => {
   return (
-    <Item>
+    <Place>
       <Address>
         {props.address}
       </Address>
       <Distance>
         {props.distance}
       </Distance>
-    </Item>
+    </Place>
   );
 };

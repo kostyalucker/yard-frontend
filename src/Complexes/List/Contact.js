@@ -2,11 +2,10 @@ import React from "react";
 import { Row, Col } from "react-flexbox-grid";
 import styled from "styled-components";
 
-const Wrap = styled.div`
-padding: 2.9rem 0rem;
-`;
+/* Для отступов секции */
+const Wrap = styled.div`padding: 2.9rem 0rem;`;
 
-const Title = styled.h2`
+const Heading = styled.h2`
   text-transform: capitalize;
   margin-bottom: 0;
   font-weight: bold;
@@ -43,7 +42,7 @@ export default () => {
     <Wrap>
       <Row center="xs">
         <Col xs={8}>
-          <Title>discover our new developments</Title>
+          <Heading>discover our new developments</Heading>
           <Description>
             Compass brings a modern approach to new development marketing and
             sales. From boutique rental conversions to luxurious ground-up

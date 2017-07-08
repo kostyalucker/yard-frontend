@@ -8,7 +8,7 @@ const Description = styled.section`
   margin-bottom: 1.5rem;
 `;
 
-const Title = styled.h3`
+const Heading = styled.h3`
   margin: 0;
   font-family: "Philosopher", sans-serif;
   font-size: 1.5rem;
@@ -40,7 +40,7 @@ export default () => {
       <Grid>
         <Row>
           <Col xs={2}>
-            <Title>Описание</Title>
+            <Heading>Описание</Heading>
           </Col>
           <Col xs={10}>
             <Text>
