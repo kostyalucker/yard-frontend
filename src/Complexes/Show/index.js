@@ -17,6 +17,7 @@ const Complex = styled(BodyClassName)`
 
 export default () => {
   return (
+<<<<<<< HEAD
     <Complex>
       <div className="App">
         <ComplexHeadline />
@@ -37,5 +38,25 @@ export default () => {
         <Guide />
       </div>
     </Complex>
+=======
+    <div className="bg-complex">
+      <ComplexHeadline />
+      <Gallery />
+      <Info
+        offers="950"
+        architect="John McAslan + Partners"
+        builder="Группа «ПСН»"
+      />
+      <Specifications
+        flat="1 503"
+        status="Квартиры"
+        price={{ min: 8.4, max: 20.2 }}
+      />
+      <Description />
+      <Infrastructure />
+      <Offers />
+      <Guide />
+    </div>
+>>>>>>> c71c2daabd995044b1376f4a7117d901de5b7316
   );
 };

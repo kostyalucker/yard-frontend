@@ -1,0 +1,322 @@
+/*================HEADLINE=================*/
+.complex-headline {
+  padding-top: 1.4rem;
+  padding-left: 1rem;
+}
+.complex-headline-title {
+  font-family: Philosopher;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.13;
+  text-align: left;
+  color: #3e4247;
+
+  margin: 0;
+}
+.complex-headline-text {
+  font-family: Fira Sans;
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.57;
+  text-align: left;
+  color: #a9afb6;
+}
+.headline-button-wrap {
+  position: relative;
+}
+.headline-button {
+  position: absolute;
+  right: 1rem;
+  bottom: 3.5rem;
+
+  padding: 0.5rem .9rem;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: .625rem;
+  font-weight: 300;
+  line-height: 1;
+  color: #00779a;
+  text-align: left;
+  background-color: #ffffff;
+  border: solid 1px #e0e0e1;
+  border-radius: 2px;
+  cursor: pointer;
+}
+/*===============HERO SECTION=================*/
+.complex-hero-wrap {
+  display: flex;
+  flex-direction: row;
+
+  overflow-x: hidden;
+}
+.hero-button-wrap {
+  position: relative;
+}
+.hero-button {
+  position: absolute;
+  bottom: 1.1rem;
+  left: 4.7rem;
+  border-radius: 2px;
+  background-color: #00779a;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-family: Fira Sans;
+  font-size: .6rem;
+  font-weight: 300;
+  line-height: 1;
+  text-align: left;
+
+  padding: .5rem 1rem;
+}
+/*===================complex-Info===============*/
+.complex-info-title {
+  display: flex;
+  flex-flow: column wrap;
+  font-family: Philosopher;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.13;
+  text-align: left;
+  color: #3e4247;
+
+  padding-right: 3rem;
+  margin-left: 1rem;
+}
+.complex-info-subheading {
+  font-family: Fira Sans;
+  font-size: .9rem;
+  font-weight: 300;
+  line-height: 1.57;
+  text-align: left;
+  color: #a9afb6;
+}
+/*==============complex-DESCRIPTION=============*/
+.complex-specific {
+  padding-left: 1rem;
+}
+.complex-specific-title {
+  padding-top: 2rem;
+  margin-top: 0;
+  margin-bottom: .7rem;
+  font-family: Philosopher;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.3;
+  color: #3e4247;
+  border-top: solid 1px #e0e0e1;
+}
+.complex-specific-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+.complex-specific-list-title {
+  flex: 0 0 43%;
+  margin-bottom: .7rem;
+  font-size: 1rem;
+  line-height: 1.38;
+  text-align: left;
+  color: #a9afb6;
+  font-family: Fira Sans;
+}
+
+.complex-specific-list-value {
+  flex: 0 0 50%;
+  margin: 0;
+  font-family: Fira Sans;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.56;
+  text-align: left;
+  color: #3e4247;
+  padding-left: 1.7rem;
+}
+
+/*=================extra-description===========*/
+.complex-extra-desc {
+  padding-top: 2.6rem;
+  padding-left: 1rem;
+}
+.extra-desc-title {
+  font-family: Philosopher;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.13;
+  text-align: left;
+  color: #3e4247;
+
+  margin: 0;
+}
+.extra-desc-text {
+  font-family: "Fira Sans";
+  font-size: 1rem;
+  line-height: 1.56;
+  text-align: left;
+  color: #3e4247;
+
+  margin: 0;
+}
+/*=======================infrastructure=============*/
+.complex-infra {
+  padding-bottom: 3rem;
+  padding-left: 1rem;
+}
+.complex-infra-title {
+  font-family: Philosopher;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.13;
+  text-align: left;
+  color: #3e4247;
+  margin: 0;
+
+  padding-top: 2rem;
+  border-top: solid 1px #e0e0e1;
+}
+.complex-infra-text {
+  font-family: Fira Sans;
+  font-size: 1rem;
+  line-height: 1.1;
+  text-align: left;
+  color: #3e4247;
+}
+/*============offers==============*/
+.complex-offers {
+  background-color: #f4f5f9;
+
+  padding: 3rem 0;
+  text-align: center;
+  padding-bottom: 3.3rem;
+}
+.complex-offers-title {
+  font-family: Philosopher;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.1;
+  text-align: center;
+  color: #3e4247;
+
+  padding-bottom: 0rem;
+}
+.complex-offers-item {
+  background: #fff;
+
+  padding: 1.7rem 2.2rem;
+}
+.complex-card-title {
+  font-family: Philosopher;
+  font-size: 1.25rem;
+  margin: 0;
+  font-weight: bold;
+  padding-bottom: 1.3rem;
+  text-align: left;
+  color: #3e4247;
+}
+.complex-card-info {
+  margin: 0;
+  padding-bottom: 1.2rem;
+
+  font-family: Fira Sans;
+  font-size: 1rem;
+  line-height: 1.38;
+  text-align: left;
+  color: #3e4247;
+}
+.complex-card-name {
+  display: block;
+  padding-bottom: .8rem;
+  color: #a9afb6;
+}
+.complex-card-btn {
+  text-align: center;
+
+  font-size: 1rem;
+  font-weight: lighter;
+  font-family: "Fira Sans", sans-serif;
+  display: inline-block;
+  padding: .7rem 2rem;
+  margin-top: 1rem;
+  color: #ffffff;
+  border-radius: 0.125rem;
+  line-height: 1.0;
+  background-color: #000;
+  border: none;
+  cursor: pointer;
+}
+/*==============complex-guide=============*/
+.complex-guide {
+  padding: 4rem 0 14.5rem;
+  background-color: #3e4247;
+}
+.complex-guide-title {
+  font-family: 'Philosopher';
+  font-size: 1.5rem;
+  margin: 0;
+  padding-top: 7.6rem;
+  padding-bottom: 3rem;
+  padding-left: .5rem;
+  color: #a9afb6;
+}
+.complex-guide-subheading {
+  font-family: 'Philosopher';
+  font-size: 3rem;
+  line-height: 1.25;
+  text-align: left;
+  margin: 0;
+  padding-bottom: 3rem;
+  padding-left: .5rem;
+  color: #fff;
+}
+.complex-guide-link {
+  text-decoration: none;
+  color: #00779a;
+  font-family: Fira Sans;
+  font-size: 1rem;
+  text-align: left;
+
+  padding-left: .5rem;
+}
+.complex-guide-img {
+  width: 592px;
+  height: 568px;
+
+  padding-top: .4rem;
+}
+/*=============complex-address===============*/
+.complex-address {
+  padding-bottom: 4rem;
+  padding-top: 1rem;
+}
+.complex-map {
+  margin-top: -12.4rem;
+}
+.complex-map-img {
+  width: 591px;
+  height: 306px;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, .5);
+  margin-left: .5rem;
+}
+.complex-address-points {
+  padding: 0;
+  margin-right: .5rem;
+  background: #fff;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, .5);
+}
+.complex-address-point {
+  padding: 1.6rem 1.5rem;
+  border-bottom: solid 1px #e0e0e1;
+}
+.complex-point-title {
+  font-family: Fira Sans;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+  padding-bottom: .85rem;
+  color: #3e4247;
+}
+.complex-point-text {
+  font-family: Fira Sans;
+  font-size: 1rem;
+  margin: 0;
+  color: #a9afb6;
+}

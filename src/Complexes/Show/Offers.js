@@ -26,6 +26,7 @@ export default () => {
       <Grid>
         <Heading>Предложения в ЖК «Полянка/44»</Heading>
         <Row>
+<<<<<<< HEAD
           <Col xs={4}>
             <OffersCard
               rooms="1"
@@ -47,6 +48,23 @@ export default () => {
               price={{ min: 20.3, max: 84.2 }}
             />
           </Col>
+=======
+          <OffersCard
+            roomsCount="1"
+            area="от 59 до 120 м²"
+            value="от 20.3 до 84.2 млн руб"
+          />
+          <OffersCard
+            roomsCount="2"
+            area="от 59 до 120 м²"
+            value="от 20.3 до 84.2 млн руб"
+          />
+          <OffersCard
+            roomsCount="3"
+            area="от 59 до 120 м²"
+            value="от 20.3 до 84.2 млн руб"
+          />
+>>>>>>> c71c2daabd995044b1376f4a7117d901de5b7316
         </Row>
       </Grid>
     </Offers>
