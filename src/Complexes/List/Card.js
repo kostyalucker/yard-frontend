@@ -23,7 +23,9 @@ const Image = styled.img`
   flex-shrink: 0;
 `;
 
-const Details = styled.article`border-bottom: 2px solid #646971;`;
+const Details = styled.article`
+border-bottom: 2px solid #646971;
+`;
 
 const Location = styled.p`
   font-family: Monaco, Menlo, Consolas, monospace;

@@ -33,23 +33,26 @@ const Subheading = styled.small`
   color: #a9afb6;
 `;
 
-export default () => {
+export default props => {
   return (
     <Grid>
       <Info>
         <Item>
           <Heading>
-            950<Subheading>предложений</Subheading>
+            {props.offers}
+            <Subheading>предложений</Subheading>
           </Heading>
         </Item>
         <Item>
           <Heading>
-            John McAslan + Partners<Subheading>архитектор</Subheading>
+            {props.architect}
+            <Subheading>архитектор</Subheading>
           </Heading>
         </Item>
         <Item>
           <Heading>
-            Группа «ПСН»<Subheading>застройщик</Subheading>
+            {props.builder}
+            <Subheading>застройщик</Subheading>
           </Heading>
         </Item>
       </Info>

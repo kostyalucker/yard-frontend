@@ -21,7 +21,11 @@ export default () => {
       <div className="App">
         <ComplexHeadline />
         <Gallery />
-        <Info />
+        <Info
+          offers="950"
+          architect="John McAslan + Partners"
+          builder="Группа «ПСН»"
+        />
         <Specifications
           counter="1 503"
           status="Квартиры"

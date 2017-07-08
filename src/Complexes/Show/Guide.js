@@ -91,10 +91,7 @@ export default () => {
             <Cards>
               <GuideCard address="Красный Октябрь" distance="24 минуты, 6 км" />
               <GuideCard address="World class" distance="2 минуты, 300 м" />
-              <GuideCard
-                address="Третьяковская галерея"
-                distance="14 минут, 4 км"
-              />
+              <GuideCard address="Третьяковская галерея"distance="14 минут, 4 км" />
             </Cards>
           </Col>
         </Row>
