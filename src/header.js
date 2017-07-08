@@ -1,25 +1,59 @@
 import React from "react";
 import headerLogo from "./compass-logo.svg";
+import { Grid, Row } from "react-flexbox-grid";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
+
+const Header = styled.header`
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-bottom: solid 1px #eaebf0;
+  background-color: #ffffff;
+`;
+
+const Logo = styled.img`
+  margin-right: 1.5rem;
+  margin-left: 1rem;
+`;
+
+const NavLink = styled(Link)`
+  text-decoration: none;
+  font-family: "Fira Sans";
+  margin-right: 2rem;
+  font-size: 1rem;
+  line-height: 1;
+  color: #3e4247;
+
+  &:last-child {
+    margin-right: 0;
+  }
+`;
+
+const Wrap = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+const Navigation = styled.nav`
+  text-align: right;
+  margin-left: auto;
+  margin-right: 1rem;
+`;
 
 export default () => {
   return (
-    <header className="header">
-      <div className="container">
-        <div className="header-wrap">
-          <img className="header-logo" src={headerLogo} alt="logo" />
-          <nav>
-            <a className="header-nav-link" href="/">
-              Купить
-            </a>
-            <a className="header-nav-link" href="/">
-              Снять
-            </a>
-            <a className="header-nav-link" href="/">
-              Наши агенты
-            </a>
-          </nav>
-        </div>
-      </div>
-    </header>
+    <Header>
+      <Grid>
+        <Row>
+          <Logo src={headerLogo} />
+          <Navigation>
+            <NavLink to="/">Купить</NavLink>
+            <NavLink to="/">Снять</NavLink>
+            <NavLink to="/">Наши агенты</NavLink>
+          </Navigation>
+        </Row>
+      </Grid>
+    </Header>
   );
 };
