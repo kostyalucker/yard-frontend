@@ -1,5 +1,4 @@
 import React from "react";
-<<<<<<< HEAD
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
@@ -72,32 +71,3 @@ export default props =>
       </Description>
     </Details>
   </Card>;
-=======
-import { Link } from "react-router-dom";
-import { Grid } from "react-flexbox-grid";
-
-export default props => {
-  return (
-    <Grid>
-      <Link className="compass-card-link" to="/complex">
-        <img
-          src={process.env.PUBLIC_URL + "./img/bitmap.jpg"}
-          className="compass-card-img"
-          alt="complex-preview"
-        />
-        <article className="compass-card-info">
-          <p className="compass-card-location">
-            {props.location}
-          </p>
-          <h3 className="compass-card-title">
-            {props.address}
-          </h3>
-          <p className="compass-card-description">
-            {props.children}
-          </p>
-        </article>
-      </Link>
-    </Grid>
-  );
-};
->>>>>>> c71c2daabd995044b1376f4a7117d901de5b7316

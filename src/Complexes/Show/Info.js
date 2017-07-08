@@ -1,5 +1,4 @@
 import React from "react";
-<<<<<<< HEAD
 import styled from "styled-components";
 import { Grid } from "react-flexbox-grid";
 
@@ -57,27 +56,6 @@ export default props => {
           </Heading>
         </Item>
       </Info>
-=======
-import { Grid, Row } from "react-flexbox-grid";
-
-export default props => {
-  return (
-    <Grid>
-      <Row>
-        <h2 className="complex-info-title">
-          {props.offers}
-          <small className="complex-info-subheading">предложений</small>
-        </h2>
-        <h2 className="complex-info-title">
-          {props.architect}
-          <small className="complex-info-subheading">предложений</small>
-        </h2>
-        <h2 className="complex-info-title">
-          {props.builder}
-          <small className="complex-info-subheading">предложений</small>
-        </h2>
-      </Row>
->>>>>>> c71c2daabd995044b1376f4a7117d901de5b7316
     </Grid>
   );
 };
