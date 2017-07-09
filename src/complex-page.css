@@ -245,8 +245,10 @@
 }
 /*==============complex-guide=============*/
 .complex-guide {
-  padding: 4rem 0 14.5rem;
+  padding-top: 4rem;
+  padding-bottom: 13.625rem;
   background-color: #3e4247;
+  margin-bottom: 13.5rem;
 }
 .complex-guide-title {
   font-family: 'Philosopher';
@@ -279,7 +281,6 @@
 .complex-guide-img {
   width: 592px;
   height: 568px;
-
   padding-top: .4rem;
 }
 /*=============complex-address===============*/
@@ -287,8 +288,9 @@
   padding-bottom: 4rem;
   padding-top: 1rem;
 }
-.complex-map {
-  margin-top: -12.4rem;
+.complex-address-map {
+  position: absolute;
+  margin-top: 4rem;
 }
 .complex-map-img {
   width: 591px;
@@ -297,10 +299,13 @@
   margin-left: .5rem;
 }
 .complex-address-points {
+  width: 37rem;
+  position: absolute;
   padding: 0;
   margin-right: .5rem;
   background: #fff;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, .5);
+  margin-top: 4rem;
 }
 .complex-address-point {
   padding: 1.6rem 1.5rem;
