@@ -32,7 +32,6 @@ const Location = styled.p`
   font-size: 1.1rem;
   text-transform: uppercase;
   color: #646971;
-  text-transform: uppercase;
   margin: 1.5rem 0 1.5rem 2rem;
 `;
 
