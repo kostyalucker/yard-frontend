@@ -10,18 +10,18 @@ export default () => {
         <Row>
           <OffersCard
             roomsCount="1"
-            area="от 59 до 120 м²"
-            value="от 20.3 до 84.2 млн руб"
+            area={{ min: 59, max: 120 }}
+            price={{ min: 20.3, max: 84.2 }}
           />
           <OffersCard
             roomsCount="2"
-            area="от 59 до 120 м²"
-            value="от 20.3 до 84.2 млн руб"
+            area={{ min: 59, max: 120 }}
+            price={{ min: 20.3, max: 84.2 }}
           />
           <OffersCard
             roomsCount="3"
-            area="от 59 до 120 м²"
-            value="от 20.3 до 84.2 млн руб"
+            area={{ min: 59, max: 120 }}
+            price={{ min: 20.3, max: 84.2 }}
           />
         </Row>
       </Grid>

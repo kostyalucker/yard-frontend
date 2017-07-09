@@ -11,11 +11,11 @@ export default props => {
         </h2>
         <h2 className="complex-info-title">
           {props.architect}
-          <small className="complex-info-subheading">предложений</small>
+          <small className="complex-info-subheading">архитектор</small>
         </h2>
         <h2 className="complex-info-title">
           {props.builder}
-          <small className="complex-info-subheading">предложений</small>
+          <small className="complex-info-subheading">застройщик</small>
         </h2>
       </Row>
     </Grid>

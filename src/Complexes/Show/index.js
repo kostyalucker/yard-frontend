@@ -15,12 +15,12 @@ export default () => {
       <ComplexHeadline />
       <Gallery />
       <Info
-        offers="950"
+        offers={950}
         architect="John McAslan + Partners"
         builder="Группа «ПСН»"
       />
       <Specifications
-        flat="1 503"
+        flat={1503}
         status="Квартиры"
         price={{ min: 8.4, max: 20.2 }}
       />

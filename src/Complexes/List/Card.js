@@ -7,7 +7,7 @@ export default props => {
     <Grid>
       <Link className="compass-card-link" to="/complex">
         <img
-          src={process.env.PUBLIC_URL + "./img/bitmap.jpg"}
+          src={props.src}
           className="compass-card-img"
           alt="complex-preview"
         />

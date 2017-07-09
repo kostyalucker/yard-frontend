@@ -10,11 +10,11 @@ export default props => {
         </h3>
         <p className="complex-card-info">
           <span className="complex-card-name">Площадь</span>
-          {props.area}
+          от {props.area.min} до {props.area.max} м²
         </p>
         <p className="complex-card-info">
           <span className="complex-card-name">Стоимость</span>
-          {props.value}
+          от {props.price.min} до {props.price.max} м²
         </p>
         <div className="complex-card-btn">Посмотреть предложения</div>
       </div>

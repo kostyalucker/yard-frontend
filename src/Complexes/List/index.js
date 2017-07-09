@@ -12,7 +12,7 @@ export default () => {
       <Contact />
       <Grid>
         <Card
-          src={process.env.PUBLIC_URL + "./img/bitmap.png"}
+          src={process.env.PUBLIC_URL + "./img/bitmap.jpg"}
           location="SOUTH BEACH, SAN FRANCISCO"
           address="764 Metropolitan Avenue"
         >
@@ -22,7 +22,7 @@ export default () => {
           unique and luxury loft apartments.
         </Card>
         <Card
-          src={process.env.PUBLIC_URL + "./img/bitmap.png"}
+          src={process.env.PUBLIC_URL + "./img/bitmap.jpg"}
           location="MIDTOWN EAST, MANHATTAN"
           address="100 East 53rd Street"
         >
@@ -32,7 +32,7 @@ export default () => {
           within the 63-story tower are generously proportioned
         </Card>
         <Card
-          src={process.env.PUBLIC_URL + "./img/bitmap.png"}
+          src={process.env.PUBLIC_URL + "./img/bitmap.jpg"}
           location="NOLITA, MANHATTAN"
           address="152 Elizabeth"
         >
