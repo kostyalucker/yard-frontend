@@ -28,21 +28,21 @@ export default () => {
         <Row>
           <Col xs={4}>
             <OffersCard
-              rooms="1"
+              rooms={1}
               size={{ min: 59, max: 120 }}
               price={{ min: 20.3, max: 84.2 }}
             />
           </Col>
           <Col xs={4}>
             <OffersCard
-              rooms="2"
+              rooms={2}
               size={{ min: 59, max: 120 }}
               price={{ min: 20.3, max: 84.2 }}
             />
           </Col>
           <Col xs={4}>
             <OffersCard
-              rooms="3"
+              rooms={3}
               size={{ min: 59, max: 120 }}
               price={{ min: 20.3, max: 84.2 }}
             />

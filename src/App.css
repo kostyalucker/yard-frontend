@@ -1,9 +1,9 @@
 body {
-  background-size: 100%;
+  background-size: 50%;
   background-color: #eaebf0;
-  background-repeat: repeat;
   background-image: url("%PUBLIC_URL%/img/background.png");
   text-rendering: optimizeLegibility !important;
+  background-repeat: repeat;
   -webkit-font-smoothing: antialiased;
   -webkit-line-break: after-white-space;
 }

@@ -2,10 +2,8 @@ import React from "react";
 import { Row, Col } from "react-flexbox-grid";
 import styled from "styled-components";
 
-/* Для отступов секции */
-const Wrap = styled.div`padding: 2.9rem 0rem;`;
-
 const Heading = styled.h2`
+  margin-top: 4rem;
   text-transform: capitalize;
   margin-bottom: 0;
   font-weight: bold;
@@ -35,11 +33,11 @@ const Button = styled.button`
   border: none;
   outline: none;
   cursor: pointer;
+  margin-bottom: 4rem;
 `;
 
 export default () => {
   return (
-    <Wrap>
       <Row center="xs">
         <Col xs={8}>
           <Heading>discover our new developments</Heading>
@@ -51,6 +49,5 @@ export default () => {
           <Button>Contact The Team</Button>
         </Col>
       </Row>
-    </Wrap>
   );
 };

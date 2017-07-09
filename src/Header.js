@@ -11,7 +11,7 @@ const Header = styled.header`
   background-color: #ffffff;
 `;
 
-const Logo = styled.img`margin-right: 1.5rem;`;
+const Logo = styled.img`height: 1.5rem;`;
 
 const NavLink = styled(Link)`
   text-decoration: none;

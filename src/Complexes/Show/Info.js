@@ -10,7 +10,9 @@ const Info = styled.section`
   padding-left: .5rem;
 `;
 
-const Item = styled.div`margin-right: 3rem;`;
+const Item = styled.div`
+  margin-right: 3rem;
+`;
 
 const Heading = styled.h2`
   font-family: Philosopher;

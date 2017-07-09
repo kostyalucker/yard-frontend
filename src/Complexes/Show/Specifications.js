@@ -56,7 +56,7 @@ export default props =>
           <List>
             <Key>Количество квартир:</Key>
             <Value>
-              {props.counter}
+              {props.flat}
             </Value>
             <Key>Статус:</Key>
             <Value>
@@ -72,7 +72,7 @@ export default props =>
           <List>
             <Key>Количество квартир:</Key>
             <Value>
-              {props.counter}
+              {props.flat}
             </Value>
             <Key>Статус:</Key>
             <Value>
@@ -88,7 +88,7 @@ export default props =>
           <List>
             <Key>Количество квартир:</Key>
             <Value>
-              {props.counter}
+              {props.flat}
             </Value>
             <Key>Статус:</Key>
             <Value>
