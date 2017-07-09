@@ -1,23 +1,53 @@
 import React from "react";
-import { Grid } from "react-flexbox-grid";
+import { Row, Col } from "react-flexbox-grid";
+import styled from "styled-components";
+
+const Heading = styled.h2`
+  margin-top: 4rem;
+  text-transform: capitalize;
+  margin-bottom: 0;
+  font-weight: bold;
+  color: #3e4247;
+  font-family: "Fira Sans";
+  font-size: 1.55rem;
+`;
+
+const Description = styled.p`
+  font-family: "Fira Sans";
+  font-size: 1rem;
+  line-height: 1.4;
+  text-align: center;
+  color: #3e4247;
+`;
+
+const Button = styled.button`
+  padding: .8rem 2rem;
+  text-transform: capitalize;
+  border-radius: 2px;
+  background-color: #000000;
+  font-family: "Fira Sans";
+  font-size: 1rem;
+  line-height: 1;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 4rem;
+`;
 
 export default () => {
   return (
-    <section className="compass-contact">
-      <Grid>
-        <div className="compass-contact-wrap">
-          <h2 className="compass-contact-title">
-            discover our new developments
-          </h2>
-          <p className="compass-contact-description">
+      <Row center="xs">
+        <Col xs={8}>
+          <Heading>discover our new developments</Heading>
+          <Description>
             Compass brings a modern approach to new development marketing and
-            sales. From boutique rental
-            <br /> conversions to luxurious ground-up condominiums, browse our
-            portfolio of current offerings.
-          </p>
-          <button className="compass-contact-button">contact the team</button>
-        </div>
-      </Grid>
-    </section>
+            sales. From boutique rental conversions to luxurious ground-up
+            condominiums, browse our portfolio of current offerings.
+          </Description>
+          <Button>Contact The Team</Button>
+        </Col>
+      </Row>
   );
 };

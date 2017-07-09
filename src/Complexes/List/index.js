@@ -1,6 +1,5 @@
 import React from "react";
 import { Grid } from "react-flexbox-grid";
-
 import Develop from "./Develop";
 import Contact from "./Contact";
 import Card from "./Card";
@@ -9,8 +8,8 @@ export default () => {
   return (
     <div>
       <Develop />
-      <Contact />
       <Grid>
+        <Contact />
         <Card
           src={process.env.PUBLIC_URL + "./img/bitmap.jpg"}
           location="SOUTH BEACH, SAN FRANCISCO"
@@ -29,7 +28,7 @@ export default () => {
           One Hundred East Fifty Third Street by Foster + Partners is a limited
           collection of modern residences in Midtown Manhattan's Cultural
           District. The 94 residences ranging from alcove lofts to four bedrooms
-          within the 63-story tower are generously proportioned
+          within the 63-story tower are generously proportioned.
         </Card>
         <Card
           src={process.env.PUBLIC_URL + "./img/bitmap.jpg"}
@@ -40,7 +39,7 @@ export default () => {
           York City designed by Japanese master architect Tadao Ando. Located at
           the corner of Kenmare and Elizabeth Streets in Nolita, the
           32,000-square-foot building will stand as a profound architectural
-          statement and embrace the industrial character of the neighborhood
+          statement and embrace the industrial character of the neighborhood.
         </Card>
       </Grid>
     </div>
