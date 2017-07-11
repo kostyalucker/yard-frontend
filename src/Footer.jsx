@@ -9,7 +9,7 @@ const Footer = styled.footer`
   padding-bottom: 2rem;
   background-color: #111111;
   color: #a9afb6;
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
 `;
 
 const Heading = styled.h4`
@@ -45,7 +45,7 @@ const Navigation = styled.nav`
 
 const TextLast = styled.p`
   margin-top: 1.2rem;
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-size: 0.875rem;
   font-weight: 300;
   color: #a9afb6;
@@ -74,46 +74,43 @@ const Copyright = styled.p`
   margin-top: 1rem;
 `;
 
-export default () => {
-  return (
-    <Footer>
-      <Grid>
-        <Row>
-          <Col xs={4}>
-            <Heading>ООО «Ярд»</Heading>
-            <Text>ОГРН 1175074002531</Text>
-            <Text>ИНН 5036165365</Text>
-            <TextLast>+7 (999) 821-14-88</TextLast>
-          </Col>
-          <Col xs={2}>
-            <Navigation>
-              <Heading>Жилые комплексы</Heading>
-              <NavLink to="/">ВТБ Арена Парк</NavLink>
-              <NavLink to="/">Садовые кварталы</NavLink>
-              <NavLink to="/">Резиденция Монэ</NavLink>
-              <LinkLast to="/">
-                Все ЖК Москвы <NavArrow src={arrowIcon} />
-              </LinkLast>
-            </Navigation>
-          </Col>
+export default () =>
+  (<Footer>
+    <Grid>
+      <Row>
+        <Col xs={4}>
+          <Heading>ООО «Ярд»</Heading>
+          <Text>ОГРН 1175074002531</Text>
+          <Text>ИНН 5036165365</Text>
+          <TextLast>+7 (999) 821-14-88</TextLast>
+        </Col>
+        <Col xs={2}>
           <Navigation>
-            <Heading>Компания</Heading>
-            <NavLink to="/">Команда</NavLink>
-            <NavLink to="/">О компании</NavLink>
+            <Heading>Жилые комплексы</Heading>
+            <NavLink to="/">ВТБ Арена Парк</NavLink>
+            <NavLink to="/">Садовые кварталы</NavLink>
+            <NavLink to="/">Резиденция Монэ</NavLink>
+            <LinkLast to="/">
+              Все ЖК Москвы <NavArrow src={arrowIcon} />
+            </LinkLast>
           </Navigation>
-          <Col xs={2} />
-        </Row>
-        <Row>
-          <Col xs={8} xsOffset={4}>
-            <Copyright>
-              Любая информация, представленная на данном сайте, носит
-              исключительно информационный характер и ни при каких условиях не
-              является публичной офертой, определяемой положениями статьи 437 ГК
-              РФ. © ООО «Ярд», 2017
-            </Copyright>
-          </Col>
-        </Row>
-      </Grid>
-    </Footer>
-  );
-};
+        </Col>
+        <Navigation>
+          <Heading>Компания</Heading>
+          <NavLink to="/">Команда</NavLink>
+          <NavLink to="/">О компании</NavLink>
+        </Navigation>
+        <Col xs={2} />
+      </Row>
+      <Row>
+        <Col xs={8} xsOffset={4}>
+          <Copyright>
+            Любая информация, представленная на данном сайте, носит
+            исключительно информационный характер и ни при каких условиях не
+            является публичной офертой, определяемой положениями статьи 437 ГК
+            РФ. © ООО «Ярд», 2017
+          </Copyright>
+        </Col>
+      </Row>
+    </Grid>
+  </Footer>);

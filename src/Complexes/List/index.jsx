@@ -10,27 +10,27 @@ export default () =>
     <Grid>
       <Contact />
       <Card
-        src={process.env.PUBLIC_URL + './img/bitmap.jpg'}
+        src={'./img/bitmap.jpg'}
         location="SOUTH BEACH, SAN FRANCISCO"
         address="764 Metropolitan Avenue"
       >
         The Lewis Steel Building is a masterful industrial conversion located in
         the heart of Williamsburg. Located at 76 North 4th Street, the former
-        1930's steel factory has been transformed into 83 individually unique
+        1930&apos;s steel factory has been transformed into 83 individually unique
         and luxury loft apartments.
       </Card>
       <Card
-        src={process.env.PUBLIC_URL + './img/bitmap.jpg'}
+        src={'./img/bitmap.jpg'}
         location="MIDTOWN EAST, MANHATTAN"
         address="100 East 53rd Street"
       >
         One Hundred East Fifty Third Street by Foster + Partners is a limited
-        collection of modern residences in Midtown Manhattan's Cultural
+        collection of modern residences in Midtown Manhattan&apos;s Cultural
         District. The 94 residences ranging from alcove lofts to four bedrooms
         within the 63-story tower are generously proportioned.
       </Card>
       <Card
-        src={process.env.PUBLIC_URL + './img/bitmap.jpg'}
+        src={'./img/bitmap.jpg'}
         location="NOLITA, MANHATTAN"
         address="152 Elizabeth"
       >

@@ -70,18 +70,18 @@ export default () =>
           <Description>
             Исторический центр Москвы в двух<br /> километрах от Кремля
           </Description>
-          <Link to='/'>Гид по Якиманке →</Link>
+          <Link to="/">Гид по Якиманке →</Link>
         </Col>
         <Col xs={6}>
           <FieldImg
-            src={process.env.PUBLIC_URL + './img/polyanka-photo.png'}
-            alt='Полянка'
+            src={'./img/polyanka-photo.png'}
+            alt="Полянка"
           />
         </Col>
       </Row>
       <Row>
         <Col xs={6}>
-          <MapImg src={process.env.PUBLIC_URL + './img/map.png'} alt="Карта" />
+          <MapImg src={'./img/map.png'} alt="Карта" />
         </Col>
         <Col xs={6}>
           <Cards>

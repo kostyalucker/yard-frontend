@@ -29,11 +29,11 @@ const Image = styled.img`height: 400px;`;
 export default () =>
   (<div>
     <Gallery>
-      <Image src={process.env.PUBLIC_URL + './img/bitmap1.png'} />
-      <Image src={process.env.PUBLIC_URL + './img/bitmap2.png'} />
-      <Image src={process.env.PUBLIC_URL + './img/bitmap3.png'} />
-      <Image src={process.env.PUBLIC_URL + './img/bitmap4.png'} />
-      <Image src={process.env.PUBLIC_URL + './img/bitmap5.png'} />
+      <Image src={'./img/bitmap1.png'} />
+      <Image src={'./img/bitmap2.png'} />
+      <Image src={'./img/bitmap3.png'} />
+      <Image src={'./img/bitmap4.png'} />
+      <Image src={'./img/bitmap5.png'} />
     </Gallery>
     <ButtonWrap>
       <Button>41 фотография</Button>
