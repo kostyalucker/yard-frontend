@@ -1,11 +1,20 @@
 import React from 'react';
 import { Grid } from 'react-flexbox-grid';
+import styled from 'styled-components';
+import background from '../../background.png';
 import Develop from './Develop';
 import Contact from './Contact';
 import Card from './Card';
 
+const ComplexesList = styled.main`
+  background-color: #eaebf0;
+  background-image: url(${background});
+  background-repeat: repeat;
+  background-size: 1.5%;
+`;
+
 export default () =>
-  (<div>
+  (<ComplexesList>
     <Develop />
     <Grid>
       <Contact />
@@ -41,4 +50,4 @@ export default () =>
         statement and embrace the industrial character of the neighborhood.
       </Card>
     </Grid>
-  </div>);
+  </ComplexesList>);
