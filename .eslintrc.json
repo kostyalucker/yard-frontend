@@ -7,7 +7,7 @@
     "avoidEscape": 0
   },
   "env": {
-      "jest": true,
-      "browser": true
-    }
+    "jest": true,
+    "browser": true
+  }
 }
