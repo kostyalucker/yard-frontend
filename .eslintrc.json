@@ -8,7 +8,6 @@
   },
   "env": {
       "jest": true,
-      "browser": true,
-      "no-undef": "off"
+      "browser": true
     }
 }
