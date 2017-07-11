@@ -42,7 +42,6 @@ const Link = styled.a`
 const Cards = styled.div`
   position: absolute;
   width: 36rem;
-  padding-left: 1rem;
   margin-top: 4rem;
   background-color: #ffffff;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);

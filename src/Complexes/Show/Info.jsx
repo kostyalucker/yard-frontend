@@ -10,6 +10,21 @@ const Info = styled.section`
   padding-left: .5rem;
 `;
 
+const Btn = styled.button`
+  position: absolute;
+  padding: 0.5rem 1rem;
+  margin-top: -2.5rem;
+  margin-left: .5rem;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 1.0;
+  color: #ffffff;
+  border: none;
+  border-radius: 2px;
+  background-color: #00779a;
+`;
+
 const Item = styled.div`margin-right: 3rem;`;
 
 const Heading = styled.h2`
@@ -35,6 +50,7 @@ const Subheading = styled.small`
 
 export default props =>
   (<Grid>
+    <Btn>41 фотография</Btn>
     <Info>
       <Item>
         <Heading>
