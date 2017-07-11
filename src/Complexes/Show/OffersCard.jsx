@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const Card = styled.div`
   padding: 1.5rem 2rem;
@@ -22,7 +22,7 @@ const Key = styled.small`
   font-size: 1rem;
   line-height: 1.38;
   color: #a9afb6;
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
 `;
 
 const Value = styled.p`
@@ -32,14 +32,14 @@ const Value = styled.p`
   font-size: 1rem;
   line-height: 1.38;
   color: #3e4247;
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
 `;
 
 const Button = styled.button`
   text-align: center;
   font-size: 1rem;
   font-weight: lighter;
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   display: block;
   padding: .7rem 2rem;
   margin: 0 auto;
@@ -53,7 +53,7 @@ const Button = styled.button`
 `;
 
 export default props =>
-  <Card>
+  (<Card>
     <Heading>
       {props.rooms}-комнатные квартиры
     </Heading>
@@ -66,4 +66,4 @@ export default props =>
       от {props.price.min} до {props.price.max} млн руб
     </Value>
     <Button>Посмотреть предложения</Button>
-  </Card>;
+  </Card>);

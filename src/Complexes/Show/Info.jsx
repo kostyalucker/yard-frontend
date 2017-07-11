@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import { Grid } from "react-flexbox-grid";
+import React from 'react';
+import styled from 'styled-components';
+import { Grid } from 'react-flexbox-grid';
 
 const Info = styled.section`
   display: flex;
@@ -10,9 +10,7 @@ const Info = styled.section`
   padding-left: .5rem;
 `;
 
-const Item = styled.div`
-  margin-right: 3rem;
-`;
+const Item = styled.div`margin-right: 3rem;`;
 
 const Heading = styled.h2`
   font-family: Philosopher;
@@ -35,29 +33,26 @@ const Subheading = styled.small`
   color: #a9afb6;
 `;
 
-export default props => {
-  return (
-    <Grid>
-      <Info>
-        <Item>
-          <Heading>
-            {props.offers}
-            <Subheading>предложений</Subheading>
-          </Heading>
-        </Item>
-        <Item>
-          <Heading>
-            {props.architect}
-            <Subheading>архитектор</Subheading>
-          </Heading>
-        </Item>
-        <Item>
-          <Heading>
-            {props.builder}
-            <Subheading>застройщик</Subheading>
-          </Heading>
-        </Item>
-      </Info>
-    </Grid>
-  );
-};
+export default props =>
+  (<Grid>
+    <Info>
+      <Item>
+        <Heading>
+          {props.offers}
+          <Subheading>предложений</Subheading>
+        </Heading>
+      </Item>
+      <Item>
+        <Heading>
+          {props.architect}
+          <Subheading>архитектор</Subheading>
+        </Heading>
+      </Item>
+      <Item>
+        <Heading>
+          {props.builder}
+          <Subheading>застройщик</Subheading>
+        </Heading>
+      </Item>
+    </Info>
+  </Grid>);

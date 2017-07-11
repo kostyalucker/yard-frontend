@@ -1,6 +1,6 @@
-import React from "react";
-import developLogo from "../../compass-development-logo.svg";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
+import developLogo from '../../compass-development-logo.svg';
 
 const Develop = styled.section`
   padding: 5rem 0;
@@ -9,10 +9,7 @@ const Develop = styled.section`
   justify-content: center;
 `;
 
-export default () => {
-  return (
-    <Develop>
-      <img src={developLogo} alt="Logo" />
-    </Develop>
-  );
-};
+export default () =>
+  (<Develop>
+    <img src={developLogo} alt="Logo" />
+  </Develop>);

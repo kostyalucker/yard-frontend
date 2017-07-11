@@ -1,8 +1,8 @@
-import React from "react";
-import arrowIcon from "./combined-shape.svg";
-import styled from "styled-components";
-import { Grid, Row, Col } from "react-flexbox-grid";
-import { Link } from "react-router-dom";
+import React from 'react';
+import styled from 'styled-components';
+import { Grid, Row, Col } from 'react-flexbox-grid';
+import { Link } from 'react-router-dom';
+import arrowIcon from './combined-shape.svg';
 
 const Footer = styled.footer`
   padding-top: 2rem;

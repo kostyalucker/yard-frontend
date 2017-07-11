@@ -1,7 +1,7 @@
-import React from "react";
-import OffersCard from "./OffersCard";
-import { Grid, Row, Col } from "react-flexbox-grid";
-import styled from "styled-components";
+import React from 'react';
+import { Grid, Row, Col } from 'react-flexbox-grid';
+import styled from 'styled-components';
+import OffersCard from './OffersCard';
 
 const Offers = styled.section`
   padding-top: 4rem;
@@ -20,35 +20,32 @@ const Heading = styled.h3`
   text-align: center;
 `;
 
-export default () => {
-  return (
-    <Offers>
-      <Grid>
-        <Heading>Предложения в ЖК «Полянка/44»</Heading>
-        <Row>
-          <Col xs={4}>
-            <OffersCard
-              rooms={1}
-              size={{ min: 59, max: 120 }}
-              price={{ min: 20.3, max: 84.2 }}
-            />
-          </Col>
-          <Col xs={4}>
-            <OffersCard
-              rooms={2}
-              size={{ min: 59, max: 120 }}
-              price={{ min: 20.3, max: 84.2 }}
-            />
-          </Col>
-          <Col xs={4}>
-            <OffersCard
-              rooms={3}
-              size={{ min: 59, max: 120 }}
-              price={{ min: 20.3, max: 84.2 }}
-            />
-          </Col>
-        </Row>
-      </Grid>
-    </Offers>
-  );
-};
+export default () =>
+  (<Offers>
+    <Grid>
+      <Heading>Предложения в ЖК «Полянка/44»</Heading>
+      <Row>
+        <Col xs={4}>
+          <OffersCard
+            rooms={1}
+            size={{ min: 59, max: 120 }}
+            price={{ min: 20.3, max: 84.2 }}
+          />
+        </Col>
+        <Col xs={4}>
+          <OffersCard
+            rooms={2}
+            size={{ min: 59, max: 120 }}
+            price={{ min: 20.3, max: 84.2 }}
+          />
+        </Col>
+        <Col xs={4}>
+          <OffersCard
+            rooms={3}
+            size={{ min: 59, max: 120 }}
+            price={{ min: 20.3, max: 84.2 }}
+          />
+        </Col>
+      </Row>
+    </Grid>
+  </Offers>);

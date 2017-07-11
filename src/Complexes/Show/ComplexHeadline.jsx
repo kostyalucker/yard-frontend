@@ -1,6 +1,6 @@
-import React from "react";
-import { Grid, Row } from "react-flexbox-grid";
-import styled from "styled-components";
+import React from 'react';
+import { Grid, Row } from 'react-flexbox-grid';
+import styled from 'styled-components';
 
 const Heading = styled.h1`
   margin-bottom: 0;
@@ -39,16 +39,13 @@ const Button = styled.button`
 `;
 const Address = styled.div``;
 
-export default () => {
-  return (
-    <Grid>
-      <Row between="xs">
-        <Address>
-          <Heading>Жилой комплекс «Полянка/44»</Heading>
-          <Text>Район Якиманка, улица Большая Полянка, дом 44 • 119180</Text>
-        </Address>
-        <Button>В избранное</Button>
-      </Row>
-    </Grid>
-  );
-};
+export default () =>
+  (<Grid>
+    <Row between="xs">
+      <Address>
+        <Heading>Жилой комплекс «Полянка/44»</Heading>
+        <Text>Район Якиманка, улица Большая Полянка, дом 44 • 119180</Text>
+      </Address>
+      <Button>В избранное</Button>
+    </Row>
+  </Grid>);

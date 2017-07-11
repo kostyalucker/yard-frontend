@@ -1,7 +1,7 @@
-import React from "react";
-import GuideCard from "./GuideCard";
-import styled from "styled-components";
-import { Grid, Row, Col } from "react-flexbox-grid";
+import React from 'react';
+import styled from 'styled-components';
+import { Grid, Row, Col } from 'react-flexbox-grid';
+import GuideCard from './GuideCard';
 
 const Guide = styled.section`
   padding-top: 4rem;
@@ -15,7 +15,7 @@ const Heading = styled.h5`
   margin: 0;
   margin-top: 7.5rem;
   margin-bottom: 3rem;
-  font-family: "Philosopher", sans-serif;
+  font-family: 'Philosopher', sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
   color: #a9afb6;
@@ -24,7 +24,7 @@ const Heading = styled.h5`
 const Description = styled.h2`
   margin: 0;
   margin-bottom: 3.2rem;
-  font-family: "Philosopher", sans-serif;
+  font-family: 'Philosopher', sans-serif;
   font-size: 3rem;
   font-weight: bold;
   line-height: 1.25;
@@ -61,41 +61,38 @@ const FieldImg = styled.img`
   height: 568px;
 `;
 
-export default () => {
-  return (
-    <Guide>
-      <Grid>
-        <Row>
-          <Col xs={6}>
-            <Heading>Якиманка</Heading>
-            <Description>
-              Исторический центр Москвы в двух<br /> километрах от Кремля
-            </Description>
-            <Link to="/">Гид по Якиманке →</Link>
-          </Col>
-          <Col xs={6}>
-            <FieldImg
-              src={process.env.PUBLIC_URL + "./img/polyanka-photo.png"}
-              alt="Полянка"
+export default () =>
+  (<Guide>
+    <Grid>
+      <Row>
+        <Col xs={6}>
+          <Heading>Якиманка</Heading>
+          <Description>
+            Исторический центр Москвы в двух<br /> километрах от Кремля
+          </Description>
+          <Link to='/'>Гид по Якиманке →</Link>
+        </Col>
+        <Col xs={6}>
+          <FieldImg
+            src={process.env.PUBLIC_URL + './img/polyanka-photo.png'}
+            alt='Полянка'
+          />
+        </Col>
+      </Row>
+      <Row>
+        <Col xs={6}>
+          <MapImg src={process.env.PUBLIC_URL + './img/map.png'} alt="Карта" />
+        </Col>
+        <Col xs={6}>
+          <Cards>
+            <GuideCard address="Красный Октябрь" distance="24 минуты, 6 км" />
+            <GuideCard address="World class" distance="2 минуты, 300 м" />
+            <GuideCard
+              address="Третьяковская галерея"
+              distance="14 минут, 4 км"
             />
-          </Col>
-        </Row>
-        <Row>
-          <Col xs={6}>
-            <MapImg
-              src={process.env.PUBLIC_URL + "./img/map.png"}
-              alt="Карта"
-            />
-          </Col>
-          <Col xs={6}>
-            <Cards>
-              <GuideCard address="Красный Октябрь" distance="24 минуты, 6 км" />
-              <GuideCard address="World class" distance="2 минуты, 300 м" />
-              <GuideCard address="Третьяковская галерея" distance="14 минут, 4 км"/>
-            </Cards>
-          </Col>
-        </Row>
-      </Grid>
-    </Guide>
-  );
-};
+          </Cards>
+        </Col>
+      </Row>
+    </Grid>
+  </Guide>);

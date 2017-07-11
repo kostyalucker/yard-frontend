@@ -1,6 +1,6 @@
-import React from "react";
-import { Grid, Row, Col } from "react-flexbox-grid";
-import styled from "styled-components";
+import React from 'react';
+import { Grid, Row, Col } from 'react-flexbox-grid';
+import styled from 'styled-components';
 
 const Specifications = styled.section`
   padding-bottom: 2.5rem;
@@ -11,7 +11,7 @@ const Heading = styled.h2`
   margin-top: 2.3rem;
   margin-bottom: 0;
   padding-bottom: 1.125rem;
-  font-family: "Philosopher", sans-serif;
+  font-family: 'Philosopher', sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
   color: #3e4247;
@@ -48,7 +48,7 @@ const Value = styled.dd`
 `;
 
 export default props =>
-  <Specifications>
+  (<Specifications>
     <Grid>
       <Heading>Характеристики</Heading>
       <Row>
@@ -102,4 +102,4 @@ export default props =>
         </Col>
       </Row>
     </Grid>
-  </Specifications>;
+  </Specifications>);

@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const Place = styled.div`
   padding: 1.5rem;
@@ -31,15 +31,12 @@ const Distance = styled.p`
   font-family: Fira Sans;
 `;
 
-export default props => {
-  return (
-    <Place>
-      <Address>
-        {props.address}
-      </Address>
-      <Distance>
-        {props.distance}
-      </Distance>
-    </Place>
-  );
-};
+export default props =>
+  (<Place>
+    <Address>
+      {props.address}
+    </Address>
+    <Distance>
+      {props.distance}
+    </Distance>
+  </Place>);

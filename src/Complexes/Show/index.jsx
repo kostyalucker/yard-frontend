@@ -1,23 +1,22 @@
-import React from "react";
-import styled from "styled-components";
-import BodyClassName from "react-body-classname";
+import React from 'react';
+import styled from 'styled-components';
+import BodyClassName from 'react-body-classname';
 
-import ComplexHeadline from "./ComplexHeadline";
-import Gallery from "./Gallery";
-import Info from "./Info";
-import Specifications from "./Specifications";
-import Description from "./Description";
-import Infrastructure from "./Infrastructure";
-import Offers from "./Offers";
-import Guide from "./Guide";
+import ComplexHeadline from './ComplexHeadline';
+import Gallery from './Gallery';
+import Info from './Info';
+import Specifications from './Specifications';
+import Description from './Description';
+import Infrastructure from './Infrastructure';
+import Offers from './Offers';
+import Guide from './Guide';
 
 const Complex = styled(BodyClassName)`
   background: #ffffff;
 `;
 
-export default () => {
-  return (
-    <Complex>
+export default () =>
+    (<Complex>
       <div className="App">
         <ComplexHeadline />
         <Gallery />
@@ -36,6 +35,5 @@ export default () => {
         <Offers />
         <Guide />
       </div>
-    </Complex>
-  );
-};
+    </Complex>);
+
