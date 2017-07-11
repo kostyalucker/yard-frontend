@@ -26,7 +26,7 @@ export default () =>
           builder="Группа «ПСН»"
         />
         <Specifications
-          counter= {1503}
+          counter={1503}
           status="Квартиры"
           price={{ min: 8.4, max: 20.2 }}
         />
