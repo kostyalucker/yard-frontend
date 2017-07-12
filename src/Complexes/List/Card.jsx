@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import { Link } from "react-router-dom";
+import React from 'react';
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const Card = styled(Link)`
   display: flex;
@@ -54,7 +54,7 @@ const Description = styled.p`
 `;
 
 export default props =>
-  <Card to="/complex">
+  (<Card to="/complex">
     <Image src={props.src} />
     <Details>
       <Location>
@@ -67,4 +67,4 @@ export default props =>
         {props.children}
       </Description>
     </Details>
-  </Card>;
+  </Card>);
