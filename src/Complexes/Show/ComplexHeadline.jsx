@@ -39,12 +39,12 @@ const Button = styled.button`
 `;
 const Address = styled.div``;
 
-export default () =>
+export default (props) =>
   (<Grid>
     <Row between="xs">
       <Address>
-        <Heading>Жилой комплекс</Heading>
-        <Text>Район Якиманка, улица Большая Полянка, дом 44 • 119180</Text>
+        <Heading>{props.name}</Heading>
+        <Text>{props.address}</Text>
       </Address>
       <Button>В избранное</Button>
     </Row>

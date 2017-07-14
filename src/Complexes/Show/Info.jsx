@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Grid } from 'react-flexbox-grid';
+import React from "react";
+import styled from "styled-components";
+import { Grid } from "react-flexbox-grid";
 
 const Info = styled.section`
   display: flex;
@@ -48,27 +48,30 @@ const Subheading = styled.small`
   color: #a9afb6;
 `;
 
-export default props =>
-  (<Grid>
-    <Btn>41 фотография</Btn>
-    <Info>
-      <Item>
-        <Heading>
-          {props.cianId}
-          <Subheading>предложений</Subheading>
-        </Heading>
-      </Item>
-      <Item>
-        <Heading>
-          {props.id}
-          <Subheading>архитектор</Subheading>
-        </Heading>
-      </Item>
-      <Item>
-        <Heading>
-          {props.builder}
-          <Subheading>застройщик</Subheading>
-        </Heading>
-      </Item>
-    </Info>
-  </Grid>);
+export default function (props) {
+  return (
+    <Grid>
+      <Btn>41 фотография</Btn>
+      <Info>
+        <Item>
+          <Heading>
+            {props.cianId}
+            <Subheading>предложений</Subheading>
+          </Heading>
+        </Item>
+        <Item>
+          <Heading>
+            {props.id}
+            <Subheading>архитектор</Subheading>
+          </Heading>
+        </Item>
+        <Item>
+          <Heading>
+            {props.builder}
+            <Subheading>застройщик</Subheading>
+          </Heading>
+        </Item>
+      </Info>
+    </Grid>
+  );
+}
