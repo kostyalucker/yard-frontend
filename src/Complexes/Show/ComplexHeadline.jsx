@@ -39,7 +39,7 @@ const Button = styled.button`
 `;
 const Address = styled.div``;
 
-export default (props) =>
+export default props =>
   (<Grid>
     <Row between="xs">
       <Address>

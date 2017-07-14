@@ -24,13 +24,13 @@ class Complex extends Component {
       images: {},
       name: {},
       details: {},
-      statistics: {}
+      statistics: {},
     };
   }
   componentDidMount() {
     fetch(`https://yard.moscow/api/v1/complexes/${this.props.match.params.id}`)
       .then(response => response.json())
-      .then(data => {
+      .then((data) => {
         console.log(data);
         this.setState({ complex: data, location: data });
       });

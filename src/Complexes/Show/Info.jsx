@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import { Grid } from "react-flexbox-grid";
+import React from 'react';
+import styled from 'styled-components';
+import { Grid } from 'react-flexbox-grid';
 
 const Info = styled.section`
   display: flex;
