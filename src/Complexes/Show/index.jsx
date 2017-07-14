@@ -11,7 +11,7 @@ import Infrastructure from './Infrastructure';
 import Offers from './Offers';
 import Guide from './Guide';
 
-const Body = styled(BodyClassName)`
+const Body = styled(BodyClassName) `
   background: #ffffff;
 `;
 
@@ -27,7 +27,7 @@ class Complex extends Component {
       .then(response => response.json())
       .then((json) => {
         console.log(json);
-        this.setState({ complex: json});
+        this.setState({ complex: json });
       });
   }
   render() {
@@ -50,13 +50,13 @@ class Complex extends Component {
             house={house}
           />
           <Gallery complex={this.state.complex} />
-          <Info 
+          <Info
             count={propertiesCount}
             architect={architect}
             builder={builder}
-           />
+          />
           <Specifications
-            flat={"нет данных"}
+            flat={'нет данных'}
             status={3}
             price={{ min: 1, max: 2 }}
           />
