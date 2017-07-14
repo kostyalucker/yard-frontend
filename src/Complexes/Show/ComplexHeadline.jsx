@@ -43,7 +43,7 @@ export default () =>
   (<Grid>
     <Row between="xs">
       <Address>
-        <Heading>Жилой комплекс «Полянка/44»</Heading>
+        <Heading>Жилой комплекс</Heading>
         <Text>Район Якиманка, улица Большая Полянка, дом 44 • 119180</Text>
       </Address>
       <Button>В избранное</Button>

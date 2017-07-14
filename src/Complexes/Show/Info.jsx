@@ -54,13 +54,13 @@ export default props =>
     <Info>
       <Item>
         <Heading>
-          {props.offers}
+          {props.cianId}
           <Subheading>предложений</Subheading>
         </Heading>
       </Item>
       <Item>
         <Heading>
-          {props.architect}
+          {props.id}
           <Subheading>архитектор</Subheading>
         </Heading>
       </Item>
