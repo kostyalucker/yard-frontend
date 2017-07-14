@@ -55,13 +55,13 @@ export default function (props) {
       <Info>
         <Item>
           <Heading>
-            {props.cianId}
+            {props.count}
             <Subheading>предложений</Subheading>
           </Heading>
         </Item>
         <Item>
           <Heading>
-            {props.id}
+            {props.architect}
             <Subheading>архитектор</Subheading>
           </Heading>
         </Item>

@@ -19,38 +19,46 @@ class Complex extends Component {
   constructor() {
     super();
     this.state = {
-      complex: {},
-      location: {},
-      images: {},
-      name: {},
-      details: {},
-      statistics: {},
+      complex: [],
     };
   }
   componentDidMount() {
     fetch(`https://yard.moscow/api/v1/complexes/${this.props.match.params.id}`)
       .then(response => response.json())
-      .then((data) => {
-        console.log(data);
-        this.setState({ complex: data, location: data });
+      .then((json) => {
+        console.log(json);
+        this.setState({ complex: json});
       });
   }
   render() {
-    console.log(this.state.complex);
-    console.log(this.state.location.countryId);
+    const location = this.state.complex.location || {};
+    const details = this.state.complex.details || {};
+    const statistics = this.state.complex.statistics || {};
+
+
+    const { details: { builder = 'Группа «ПСН»' } = {} } = this.state.complex || {};
+    const { street, house, subLocalityName } = location || {};
+    const { architect } = details || {};
+    const { propertiesCount } = statistics || {};
     return (
       <Body>
         <div className="App">
           <ComplexHeadline
             name={this.state.complex.name}
-            address={`${this.state.location.cianId}`}
+            address={subLocalityName}
+            street={street}
+            house={house}
           />
           <Gallery complex={this.state.complex} />
-          <Info />
+          <Info 
+            count={propertiesCount}
+            architect={architect}
+            builder={builder}
+           />
           <Specifications
-            flat={1503}
-            status="Квартиры"
-            price={{ min: 8.4, max: 20.2 }}
+            flat={"нет данных"}
+            status={3}
+            price={{ min: 1, max: 2 }}
           />
           <Description />
           <Infrastructure />

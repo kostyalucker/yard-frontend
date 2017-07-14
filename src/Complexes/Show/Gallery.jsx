@@ -19,5 +19,5 @@ export default function (props) {
       </div>
     );
   }
-  return (<div />);
+  return null;
 }

@@ -66,19 +66,27 @@ export default props =>
             <Value>
               от {props.price.min} до {props.price.max} млн руб.
             </Value>
+            <Key>Безопасность:</Key>
+            <Value>
+              Охраняемая территория
+            </Value>
           </List>
         </Col>
         <Col xs={4}>
           <List>
-            <Key>Количество квартир:</Key>
+            <Key>Конструкция корпусов:</Key>
             <Value>
               {props.flat}
             </Value>
-            <Key>Статус:</Key>
+            <Key>Площадь:</Key>
             <Value>
               {props.status}
             </Value>
-            <Key>Цена:</Key>
+            <Key>Высота потолков:</Key>
+            <Value>
+              от {props.price.min} до {props.price.max} млн руб.
+            </Value>
+            <Key>Обслуживание:</Key>
             <Value>
               от {props.price.min} до {props.price.max} млн руб.
             </Value>
@@ -86,17 +94,21 @@ export default props =>
         </Col>
         <Col xs={4}>
           <List>
-            <Key>Количество квартир:</Key>
+            <Key>Начало строительства:</Key>
             <Value>
               {props.flat}
             </Value>
-            <Key>Статус:</Key>
+            <Key>Конец строительства:</Key>
             <Value>
               {props.status}
             </Value>
-            <Key>Цена:</Key>
+            <Key>Наземная парковка:</Key>
             <Value>
-              от {props.price.min} до {props.price.max} млн руб.
+              нет
+            </Value>
+            <Key>Подземная парковка:</Key>
+            <Value>
+              нет
             </Value>
           </List>
         </Col>

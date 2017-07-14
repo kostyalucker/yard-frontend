@@ -43,8 +43,8 @@ export default props =>
   (<Grid>
     <Row between="xs">
       <Address>
-        <Heading>{props.name}</Heading>
-        <Text>{props.address}</Text>
+        <Heading>Жилой комплекс «{props.name}»</Heading>
+        <Text>{props.address}, {props.street}, {props.house}</Text>
       </Address>
       <Button>В избранное</Button>
     </Row>
