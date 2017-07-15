@@ -56,7 +56,6 @@ export default function (props) {
   const priceTo = price.to || {};
   const details = props.complex.details || {};
   const ceilHeight = details.ceilHeight || {};
-
   return (
     <Specifications>
       <Grid>
@@ -83,13 +82,13 @@ export default function (props) {
               </Value>
               <Key>Площадь:</Key>
               <Value>
-                От {Math.floor(totalPrimaryArea.from).toFixed()} до&nbsp;
-                {Math.floor(totalPrimaryArea.to).toFixed()} м²
+                От {Math.abs(totalPrimaryArea.from).toFixed(2)} до&nbsp;
+                {Math.abs(totalPrimaryArea.to).toFixed(2)} м²
               </Value>
               <Key>Высота потолков:</Key>
               <Value>
-                {Math.floor(ceilHeight.from).toFixed()} -&nbsp;
-                {Math.floor(ceilHeight.to).toFixed()} м
+                {Math.abs(ceilHeight.from).toFixed(2)} -&nbsp;
+                {Math.abs(ceilHeight.to).toFixed(2)} м
               </Value>
               <Key>Обслуживание:</Key>
               <Value>
@@ -101,13 +100,11 @@ export default function (props) {
             <List>
               <Key>Начало строительства:</Key>
               <Value>
-                {details.startYear} года&nbsp;
-                {quarters[details.startQuarter]} квартал
+                {quarters[details.startQuarter]} квартал {details.startYear} года&nbsp;
               </Value>
               <Key>Конец строительства:</Key>
               <Value>
-                {details.commissioningYear} года&nbsp;
-                {quarters[details.commissioningQuarter]} квартал
+                {quarters[details.commissioningQuarter]} квартал {details.commissioningYear} года&nbsp;
               </Value>
               <Key>Наземная парковка:</Key>
               <Value>

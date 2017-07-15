@@ -30,7 +30,7 @@ const Details = styled.article``;
 
 const Location = styled.p`
   font-family: Monaco, Menlo, Consolas, monospace;
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-transform: uppercase;
   color: #646971;
   margin: 1.5rem 0 1.5rem 2rem;
@@ -62,11 +62,9 @@ export default function (props) {
       <Image src={`${imagesPath}${props.complex.image.id}-512`} alt="preview" />
       <Details>
         <Location>
-          {props.complex.location.localityName},
-          {props.complex.location.street},
           {props.complex.location.subLocalityName},
-          {props.complex.location.house},
-          {props.complex.location.postalCode}
+          {props.complex.location.street},
+          {props.complex.location.house}
         </Location>
         <Address>
           {props.complex.name}

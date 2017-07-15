@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Grid } from 'react-flexbox-grid';
+import pluralize from 'pluralize-ru';
 
 const Info = styled.section`
   display: flex;
   border-bottom: solid 1px #e0e0e1;
-  padding-top: 2.5rem;
+  padding-top: 1.6rem;
   padding-bottom: 1.6rem;
   padding-left: .5rem;
 `;
@@ -49,9 +50,11 @@ const Subheading = styled.small`
 `;
 
 export default function (props) {
+  const length = props.images.length;
+  const countPhoto = pluralize(length, '%d фотографий', '%d фотография', '%d фотографии', '%d фотографий');
   return (
     <Grid>
-      <Btn>{props.images.length} фотография</Btn>
+      <Btn>{countPhoto}</Btn>
       <Info>
         <Item>
           <Heading>

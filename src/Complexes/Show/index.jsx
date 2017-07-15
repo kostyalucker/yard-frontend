@@ -7,6 +7,7 @@ import Info from './Info';
 import Specifications from './Specifications';
 import Description from './Description';
 import Infrastructure from './Infrastructure';
+import { getApi } from '../../Api';
 
 const Body = styled(BodyClassName)`
   background: #ffffff;
@@ -15,14 +16,15 @@ const Body = styled(BodyClassName)`
 class Complex extends Component {
   constructor() {
     super();
-    this.state = {
-      complex: [],
-    };
+    this.state = { complex: {} };
   }
+
   componentDidMount() {
-    const url = `https://yard.moscow/api/v1/complexes/${this.props.match.params.slug}`;
-    fetch(url).then(response => response.json()).then((json) => {
-      this.setState({ complex: json });
+    const complexSlug = this.props.match.params.slug;
+    getApi(`complexes/${complexSlug}`).then((json) => {
+      this.setState({
+        complex: json,
+      });
     });
   }
   render() {

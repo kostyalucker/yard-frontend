@@ -5,6 +5,7 @@ import background from '../../background.png';
 import Develop from './Develop';
 import Contact from './Contact';
 import Card from './Card';
+import { getApi, filterPublic } from '../../Api';
 
 const ComplexesList = styled.main`
   background-color: #eaebf0;
@@ -16,18 +17,15 @@ const ComplexesList = styled.main`
 class Complexes extends Component {
   constructor() {
     super();
-    this.state = {
-      complexes: [],
-    };
+    this.state = { complexes: [] };
   }
-  componentDidMount() {
-    const url = 'https://yard.moscow/api/v1/complexes?filter%5Bstate%5D=public';
 
-    fetch(url)
-      .then(response => response.json())
-      .then((data) => {
-        this.setState({ complexes: data.items });
+  componentDidMount() {
+    getApi('complexes', filterPublic).then((json) => {
+      this.setState({
+        complexes: json.items,
       });
+    });
   }
   render() {
     return (
