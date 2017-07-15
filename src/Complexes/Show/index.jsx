@@ -22,7 +22,6 @@ class Complex extends Component {
   componentDidMount() {
     const url = `https://yard.moscow/api/v1/complexes/${this.props.match.params.slug}`;
     fetch(url).then(response => response.json()).then((json) => {
-      console.log(json);
       this.setState({ complex: json });
     });
   }
