@@ -26,32 +26,24 @@ const Text = styled.p`
   color: #3e4247;
 `;
 
-export default () =>
-  (<Grid>
-    <Infratructure>
-      <Heading>Инфраструктура</Heading>
-      <Row>
-        <Col xs={2}>
-          <Text>Бассейн</Text>
-          <Text>Частная школа</Text>
-        </Col>
-        <Col xs={2}>
-          <Text>Детский сад</Text>
-          <Text>Частная школа</Text>
-        </Col>
-        <Col xs={2}>
-          <Text>Частная школа</Text>
-          <Text>Частная школа</Text>
-        </Col>
-        <Col xs={2}>
-          <Text>Бассейн</Text>
-        </Col>
-        <Col xs={2}>
-          <Text>Детский сад</Text>
-        </Col>
-        <Col xs={2}>
-          <Text>Частная школа</Text>
-        </Col>
-      </Row>
-    </Infratructure>
-  </Grid>);
+export default function (props) {
+  if (props.amenity) {
+    return (
+      <Grid>
+        <Infratructure>
+          <Heading>Инфраструктура</Heading>
+          <Row>
+            {props.amenties.map(amenity =>
+              (<Col xs={2}>
+                <Text>
+                  {amenity}
+                </Text>
+              </Col>),
+            )};
+          </Row>
+        </Infratructure>
+      </Grid>
+    );
+  }
+  return null;
+}

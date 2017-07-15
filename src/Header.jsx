@@ -11,7 +11,10 @@ const Header = styled.header`
   background-color: #ffffff;
 `;
 
-const Logo = styled.img`height: 1.5rem;`;
+const Logo = styled.a`
+  display: block;
+  height: 1.5rem;
+`;
 
 const NavLink = styled(Link)`
   text-decoration: none;
@@ -35,7 +38,7 @@ export default () =>
   (<Header>
     <Grid>
       <Row>
-        <Logo src={headerLogo} />
+        <Logo href="/"><img src={headerLogo} alt="Logotype" /></Logo>
         <Navigation>
           <NavLink to="/">Купить</NavLink>
           <NavLink to="/">Снять</NavLink>

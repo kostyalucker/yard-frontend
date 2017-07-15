@@ -21,10 +21,11 @@ class Complexes extends Component {
     };
   }
   componentDidMount() {
-    fetch('https://yard.moscow/api/v1/complexes?filter%5Bstate%5D=public')
+    const url = 'https://yard.moscow/api/v1/complexes?filter%5Bstate%5D=public';
+
+    fetch(url)
       .then(response => response.json())
       .then((data) => {
-        console.log(data);
         this.setState({ complexes: data.items });
       });
   }

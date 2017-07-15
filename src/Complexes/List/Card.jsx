@@ -62,7 +62,11 @@ export default function (props) {
       <Image src={`${imagesPath}${props.complex.image.id}-512`} alt="preview" />
       <Details>
         <Location>
-          {props.complex.location.subLocalityName}
+          {props.complex.location.localityName},
+          {props.complex.location.street},
+          {props.complex.location.subLocalityName},
+          {props.complex.location.house},
+          {props.complex.location.postalCode}
         </Location>
         <Address>
           {props.complex.name}

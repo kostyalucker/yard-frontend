@@ -23,12 +23,11 @@ class Complex extends Component {
     };
   }
   componentDidMount() {
-    fetch(`https://yard.moscow/api/v1/complexes/${this.props.match.params.id}`)
-      .then(response => response.json())
-      .then((json) => {
-        console.log(json);
-        this.setState({ complex: json });
-      });
+    const url = `https://yard.moscow/api/v1/complexes/${this.props.match.params.slug}`;
+    fetch(url).then(response => response.json()).then((json) => {
+      console.log(json);
+      this.setState({ complex: json });
+    });
   }
   render() {
     const location = this.state.complex.location || {};
@@ -54,16 +53,13 @@ class Complex extends Component {
           <Info
             count={statistics.propertiesCount}
             architect={architect}
-            builder={'Группа «ПСН»'}
             images={images}
           />
-          <Specifications
-            complex={this.state.complex}
-          />
+          <Specifications complex={this.state.complex} />
           <Description complex={description} />
           <Infrastructure complex={amenities} />
-          <Offers />
-          <Guide />
+          {/* <Offers />
+          <Guide /> */}
         </div>
       </Body>
     );

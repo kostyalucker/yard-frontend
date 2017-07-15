@@ -65,12 +65,6 @@ export default function (props) {
             <Subheading>архитектор</Subheading>
           </Heading>
         </Item>
-        <Item>
-          <Heading>
-            {props.builder}
-            <Subheading>застройщик</Subheading>
-          </Heading>
-        </Item>
       </Info>
     </Grid>
   );
