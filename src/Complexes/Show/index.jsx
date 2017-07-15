@@ -11,7 +11,7 @@ import Infrastructure from './Infrastructure';
 import Offers from './Offers';
 import Guide from './Guide';
 
-const Body = styled(BodyClassName) `
+const Body = styled(BodyClassName)`
   background: #ffffff;
 `;
 
@@ -33,13 +33,13 @@ class Complex extends Component {
   render() {
     const location = this.state.complex.location || {};
     const details = this.state.complex.details || {};
+    const images = this.state.complex.images || [];
     const statistics = this.state.complex.statistics || {};
+    const description = this.state.complex.description;
+    const amenities = this.state.complex.amenities || {};
 
-
-    const { details: { builder = 'Группа «ПСН»' } = {} } = this.state.complex || {};
-    const { street, house, subLocalityName } = location || {};
+    const { street, house, subLocalityName, postalCode } = location || {};
     const { architect } = details || {};
-    const { propertiesCount } = statistics || {};
     return (
       <Body>
         <div className="App">
@@ -48,20 +48,20 @@ class Complex extends Component {
             address={subLocalityName}
             street={street}
             house={house}
+            postalCode={postalCode}
           />
-          <Gallery complex={this.state.complex} />
+          <Gallery images={images} />
           <Info
-            count={propertiesCount}
+            count={statistics.propertiesCount}
             architect={architect}
-            builder={builder}
+            builder={'Группа «ПСН»'}
+            images={images}
           />
           <Specifications
-            flat={'нет данных'}
-            status={3}
-            price={{ min: 1, max: 2 }}
+            complex={this.state.complex}
           />
-          <Description />
-          <Infrastructure />
+          <Description complex={description} />
+          <Infrastructure complex={amenities} />
           <Offers />
           <Guide />
         </div>

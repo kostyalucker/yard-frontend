@@ -73,14 +73,14 @@ export default () =>
         </Col>
         <Col xs={6}>
           <FieldImg
-            src={'./img/polyanka-photo.png'}
+            src={`${process.env.PUBLIC_URL}/img/polyanka-photo.png`}
             alt="Полянка"
           />
         </Col>
       </Row>
       <Row>
         <Col xs={6}>
-          <MapImg src={'./img/map.png'} alt="Карта" />
+          <MapImg src={`${process.env.PUBLIC_URL}/img/map.png`} alt="Карта" />
         </Col>
         <Col xs={6}>
           <Cards>

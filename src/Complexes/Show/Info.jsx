@@ -51,7 +51,7 @@ const Subheading = styled.small`
 export default function (props) {
   return (
     <Grid>
-      <Btn>41 фотография</Btn>
+      <Btn>{props.images.length} фотография</Btn>
       <Info>
         <Item>
           <Heading>

@@ -44,7 +44,7 @@ export default props =>
     <Row between="xs">
       <Address>
         <Heading>Жилой комплекс «{props.name}»</Heading>
-        <Text>{props.address}, {props.street}, {props.house}</Text>
+        <Text>{props.address}, {props.street}, {props.house},{props.postalCode}</Text>
       </Address>
       <Button>В избранное</Button>
     </Row>

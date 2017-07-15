@@ -67,9 +67,7 @@ export default function (props) {
         <Address>
           {props.complex.name}
         </Address>
-        <Description>
-            Lorem ipsum dolor sit amet...
-        </Description>
+        <Description />
       </Details>
     </Card>
   );

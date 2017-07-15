@@ -10,14 +10,17 @@ const imagesPath = 'https://yard-images.s3.amazonaws.com/';
 
 const Image = styled.img`height: 400px;`;
 export default function (props) {
-  if (props.complex.images) {
-    return (
-      <div>
-        <Gallery>
-          {props.complex.images.map(img => <Image src={`${imagesPath}${img.id}-512`} />)}
-        </Gallery>
-      </div>
-    );
-  }
-  return null;
+  return (
+    <div>
+      <Gallery>
+        {props.images.map(img =>
+          (<Image
+            key={img.id}
+            src={`${imagesPath}${img.id}-512`}
+            alt="Галерея"
+          />),
+        )}
+      </Gallery>
+    </div>
+  );
 }

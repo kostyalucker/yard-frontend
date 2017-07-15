@@ -10,7 +10,7 @@ const Description = styled.section`
 
 const Heading = styled.h3`
   margin: 0;
-  font-family: "Philosopher", sans-serif;
+  font-family: 'Philosopher', sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.13;
@@ -18,7 +18,7 @@ const Heading = styled.h3`
 `;
 
 const Text = styled.p`
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-size: 1rem;
   line-height: 1.56;
   text-align: left;
