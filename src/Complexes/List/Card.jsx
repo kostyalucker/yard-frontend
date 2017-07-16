@@ -63,7 +63,7 @@ export default function (props) {
       <Details>
         <Location>
           {props.complex.location.subLocalityName},
-           {props.complex.location.street},
+            {props.complex.location.street},
            {props.complex.location.house}
         </Location>
         <Address>
