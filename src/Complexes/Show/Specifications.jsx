@@ -100,11 +100,11 @@ export default function (props) {
             <List>
               <Key>Начало строительства:</Key>
               <Value>
-                {quarters[details.startQuarter]} квартал {details.startYear} года;
+                {quarters[details.startQuarter]} квартал {details.startYear} года
               </Value>
               <Key>Конец строительства:</Key>
               <Value>
-                {quarters[details.commissioningQuarter]} квартал {details.commissioningYear} года;
+                {quarters[details.commissioningQuarter]} квартал {details.commissioningYear} года
               </Value>
               <Key>Наземная парковка:</Key>
               <Value>
