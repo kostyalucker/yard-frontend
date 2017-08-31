@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Grid } from 'react-flexbox-grid';
+import pluralize from 'pluralize-ru';
 
 const Info = styled.section`
   display: flex;
   border-bottom: solid 1px #e0e0e1;
-  padding-top: 2.5rem;
+  padding-top: 1.6rem;
   padding-bottom: 1.6rem;
   padding-left: .5rem;
 `;
@@ -48,27 +49,26 @@ const Subheading = styled.small`
   color: #a9afb6;
 `;
 
-export default props =>
-  (<Grid>
-    <Btn>41 фотография</Btn>
-    <Info>
-      <Item>
-        <Heading>
-          {props.offers}
-          <Subheading>предложений</Subheading>
-        </Heading>
-      </Item>
-      <Item>
-        <Heading>
-          {props.architect}
-          <Subheading>архитектор</Subheading>
-        </Heading>
-      </Item>
-      <Item>
-        <Heading>
-          {props.builder}
-          <Subheading>застройщик</Subheading>
-        </Heading>
-      </Item>
-    </Info>
-  </Grid>);
+export default function (props) {
+  const length = props.images.length;
+  const countPhoto = pluralize(length, '%d фотографий', '%d фотография', '%d фотографии', '%d фотографий');
+  return (
+    <Grid>
+      <Btn>{countPhoto}</Btn>
+      <Info>
+        <Item>
+          <Heading>
+            {props.count}
+            <Subheading>предложений</Subheading>
+          </Heading>
+        </Item>
+        <Item>
+          <Heading>
+            {props.architect}
+            <Subheading>архитектор</Subheading>
+          </Heading>
+        </Item>
+      </Info>
+    </Grid>
+  );
+}

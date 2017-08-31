@@ -1,6 +1,7 @@
 import React from 'react';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import styled from 'styled-components';
+import { securityKinds, constructionKinds, quarters } from './Dictionary';
 
 const Specifications = styled.section`
   padding-bottom: 2.5rem;
@@ -47,59 +48,79 @@ const Value = styled.dd`
   color: #3e4247;
 `;
 
-export default props =>
-  (<Specifications>
-    <Grid>
-      <Heading>Характеристики</Heading>
-      <Row>
-        <Col xs={4}>
-          <List>
-            <Key>Количество квартир:</Key>
-            <Value>
-              {props.flat}
-            </Value>
-            <Key>Статус:</Key>
-            <Value>
-              {props.status}
-            </Value>
-            <Key>Цена:</Key>
-            <Value>
-              от {props.price.min} до {props.price.max} млн руб.
-            </Value>
-          </List>
-        </Col>
-        <Col xs={4}>
-          <List>
-            <Key>Количество квартир:</Key>
-            <Value>
-              {props.flat}
-            </Value>
-            <Key>Статус:</Key>
-            <Value>
-              {props.status}
-            </Value>
-            <Key>Цена:</Key>
-            <Value>
-              от {props.price.min} до {props.price.max} млн руб.
-            </Value>
-          </List>
-        </Col>
-        <Col xs={4}>
-          <List>
-            <Key>Количество квартир:</Key>
-            <Value>
-              {props.flat}
-            </Value>
-            <Key>Статус:</Key>
-            <Value>
-              {props.status}
-            </Value>
-            <Key>Цена:</Key>
-            <Value>
-              от {props.price.min} до {props.price.max} млн руб.
-            </Value>
-          </List>
-        </Col>
-      </Row>
-    </Grid>
-  </Specifications>);
+export default function (props) {
+  const statistics = props.complex.statistics || {};
+  const totalPrimaryArea = statistics.totalPrimaryArea || {};
+  const price = statistics.price || {};
+  const priceFrom = price.from || {};
+  const priceTo = price.to || {};
+  const details = props.complex.details || {};
+  const ceilHeight = details.ceilHeight || {};
+  return (
+    <Specifications>
+      <Grid>
+        <Heading>Характеристики</Heading>
+        <Row>
+          <Col xs={4}>
+            <List>
+              <Key>Цена:</Key>
+              <Value>
+                От {Math.floor(priceFrom.rub / 10000) / 100} до&nbsp;
+                {Math.floor(priceTo.rub / 10000) / 100} млн
+              </Value>
+              <Key>Безопасность:</Key>
+              <Value>
+                {securityKinds[details.security]}
+              </Value>
+            </List>
+          </Col>
+          <Col xs={4}>
+            <List>
+              <Key>Конструкция корпусов:</Key>
+              <Value>
+                {constructionKinds[details.constructionKind]}
+              </Value>
+              <Key>Площадь:</Key>
+              <Value>
+                От {Math.abs(totalPrimaryArea.from).toFixed(2)} до&nbsp;
+                {Math.abs(totalPrimaryArea.to).toFixed(2)} м²
+              </Value>
+              <Key>Высота потолков:</Key>
+              <Value>
+                {Math.abs(ceilHeight.from).toFixed(2)} -&nbsp;
+                {Math.abs(ceilHeight.to).toFixed(2)} м
+              </Value>
+              <Key>Обслуживание:</Key>
+              <Value>
+                {details.maintenanceCosts} руб / м² / месяц
+              </Value>
+            </List>
+          </Col>
+          <Col xs={4}>
+            <List>
+              <Key>Начало строительства:</Key>
+              <Value>
+                {quarters[details.startQuarter]} квартал {details.startYear} года
+              </Value>
+              <Key>Конец строительства:</Key>
+              <Value>
+                {quarters[details.commissioningQuarter]} квартал {details.commissioningYear} года
+              </Value>
+              <Key>Наземная парковка:</Key>
+              <Value>
+                {details.parking === undefined && 'Нет'}
+                {details.parking > 0 && `${details.parking} м/м`}
+              </Value>
+              <Key>Подземная парковка:</Key>
+              <Value>
+                {details.undergroundGarages === undefined && 'Нет'}
+                {details.undergroundGarages > 0 &&
+                  `${details.undergroundGarages} м/м`}
+              </Value>
+            </List>
+          </Col>
+        </Row>
+      </Grid>
+    </Specifications>
+  );
+}

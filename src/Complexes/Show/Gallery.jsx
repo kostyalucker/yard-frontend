@@ -3,17 +3,24 @@ import styled from 'styled-components';
 
 const Gallery = styled.div`
   display: flex;
-  overflow-x: hidden;
+  overflow-x: auto;
 `;
 
+const imagesPath = 'https://yard-images.s3.amazonaws.com/';
+
 const Image = styled.img`height: 400px;`;
-export default () =>
-  (<div>
-    <Gallery>
-      <Image src={'./img/bitmap1.png'} />
-      <Image src={'./img/bitmap2.png'} />
-      <Image src={'./img/bitmap3.png'} />
-      <Image src={'./img/bitmap4.png'} />
-      <Image src={'./img/bitmap5.png'} />
-    </Gallery>
-  </div>);
+export default function (props) {
+  return (
+    <div>
+      <Gallery>
+        {props.images.map(img =>
+          (<Image
+            key={img.id}
+            src={`${imagesPath}${img.id}-512`}
+            alt="Галерея"
+          />),
+        )}
+      </Gallery>
+    </div>
+  );
+}

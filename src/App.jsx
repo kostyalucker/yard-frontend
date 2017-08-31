@@ -12,7 +12,7 @@ export default () =>
     <div className="App">
       <Header />
       <Route exact path="/" component={List} />
-      <Route path="/complex" component={Show} />
+      <Route path="/complex/:slug" component={Show} />
       <Footer />
     </div>
   </Router>);
